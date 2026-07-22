@@ -1,0 +1,1337 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ExpoBrownfield",
+    "printedName": "ExpoBrownfield",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ExpoBrownfield",
+        "declAttributes": [
+          "Exported",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "ExpoBrownfield",
+        "declAttributes": [
+          "Exported"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesCore",
+        "printedName": "ExpoModulesCore",
+        "declKind": "Import",
+        "moduleName": "ExpoBrownfield"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExpoBrownfieldModule",
+        "printedName": "ExpoBrownfieldModule",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "definition",
+            "printedName": "definition()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModuleDefinition",
+                "printedName": "ExpoModulesCore.ModuleDefinition",
+                "usr": "s:15ExpoModulesCore16ModuleDefinitionC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0aB6ModuleC10definition0A11ModulesCore0C10DefinitionCyF",
+            "mangledName": "$s14ExpoBrownfield0aB6ModuleC10definition0A11ModulesCore0C10DefinitionCyF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendMessage",
+            "printedName": "sendMessage(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any?]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0aB6ModuleC11sendMessageyySDySSypSgGF",
+            "mangledName": "$s14ExpoBrownfield0aB6ModuleC11sendMessageyySDySSypSgGF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(appContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExpoBrownfieldModule",
+                "printedName": "ExpoBrownfield.ExpoBrownfieldModule",
+                "usr": "s:14ExpoBrownfield0aB6ModuleC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppContext",
+                "printedName": "ExpoModulesCore.AppContext",
+                "usr": "c:@M@ExpoModulesCore@objc(cs)EXAppContext"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14ExpoBrownfield0aB6ModuleC10appContextAC0A11ModulesCore03AppE0C_tcfc",
+            "mangledName": "$s14ExpoBrownfield0aB6ModuleC10appContextAC0A11ModulesCore03AppE0C_tcfc",
+            "moduleName": "ExpoBrownfield",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14ExpoBrownfield0aB6ModuleC",
+        "mangledName": "$s14ExpoBrownfield0aB6ModuleC",
+        "moduleName": "ExpoBrownfield",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:15ExpoModulesCore10BaseModuleC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ExpoModulesCore.BaseModule"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AnyModule",
+            "printedName": "AnyModule",
+            "usr": "s:15ExpoModulesCore9AnyModuleP",
+            "mangledName": "$s15ExpoModulesCore9AnyModuleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyArgument",
+            "printedName": "AnyArgument",
+            "usr": "s:15ExpoModulesCore11AnyArgumentP",
+            "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "EventEmitter",
+            "printedName": "EventEmitter",
+            "usr": "s:15ExpoModulesCore12EventEmitterP",
+            "mangledName": "$s15ExpoModulesCore12EventEmitterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesCore",
+        "printedName": "ExpoModulesCore",
+        "declKind": "Import",
+        "moduleName": "ExpoBrownfield"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ExpoBrownfieldStateModule",
+        "printedName": "ExpoBrownfieldStateModule",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "definition",
+            "printedName": "definition()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModuleDefinition",
+                "printedName": "ExpoModulesCore.ModuleDefinition",
+                "usr": "s:15ExpoModulesCore16ModuleDefinitionC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0aB11StateModuleC10definition0A11ModulesCore0D10DefinitionCyF",
+            "mangledName": "$s14ExpoBrownfield0aB11StateModuleC10definition0A11ModulesCore0D10DefinitionCyF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notifyKeyRecreated",
+            "printedName": "notifyKeyRecreated(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0aB11StateModuleC18notifyKeyRecreatedyySSF",
+            "mangledName": "$s14ExpoBrownfield0aB11StateModuleC18notifyKeyRecreatedyySSF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(appContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ExpoBrownfieldStateModule",
+                "printedName": "ExpoBrownfield.ExpoBrownfieldStateModule",
+                "usr": "s:14ExpoBrownfield0aB11StateModuleC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AppContext",
+                "printedName": "ExpoModulesCore.AppContext",
+                "usr": "c:@M@ExpoModulesCore@objc(cs)EXAppContext"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14ExpoBrownfield0aB11StateModuleC10appContextAC0A11ModulesCore03AppF0C_tcfc",
+            "mangledName": "$s14ExpoBrownfield0aB11StateModuleC10appContextAC0A11ModulesCore03AppF0C_tcfc",
+            "moduleName": "ExpoBrownfield",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14ExpoBrownfield0aB11StateModuleC",
+        "mangledName": "$s14ExpoBrownfield0aB11StateModuleC",
+        "moduleName": "ExpoBrownfield",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "superclassUsr": "s:15ExpoModulesCore10BaseModuleC",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ExpoModulesCore.BaseModule"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AnyModule",
+            "printedName": "AnyModule",
+            "usr": "s:15ExpoModulesCore9AnyModuleP",
+            "mangledName": "$s15ExpoModulesCore9AnyModuleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyArgument",
+            "printedName": "AnyArgument",
+            "usr": "s:15ExpoModulesCore11AnyArgumentP",
+            "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "EventEmitter",
+            "printedName": "EventEmitter",
+            "usr": "s:15ExpoModulesCore12EventEmitterP",
+            "mangledName": "$s15ExpoModulesCore12EventEmitterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ManifestProvider",
+        "printedName": "ManifestProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchManifest",
+            "printedName": "fetchManifest(bundleURL:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Any]?, Foundation.URL?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "([Swift.String : Any]?, Foundation.URL?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.String : Any]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URL?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URL",
+                            "printedName": "Foundation.URL",
+                            "usr": "s:10Foundation3URLV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield16ManifestProviderC05fetchC09bundleURL10completiony10Foundation0G0VSg_ySDySSypGSg_AJtctFZ",
+            "mangledName": "$s14ExpoBrownfield16ManifestProviderC05fetchC09bundleURL10completiony10Foundation0G0VSg_ySDySSypGSg_AJtctFZ",
+            "moduleName": "ExpoBrownfield",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14ExpoBrownfield16ManifestProviderC",
+        "mangledName": "$s14ExpoBrownfield16ManifestProviderC",
+        "moduleName": "ExpoBrownfield",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ExpoBrownfield"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BrownfieldMessagingInternal",
+        "printedName": "BrownfieldMessagingInternal",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrownfieldMessagingInternal",
+                "printedName": "ExpoBrownfield.BrownfieldMessagingInternal",
+                "usr": "s:14ExpoBrownfield0B17MessagingInternalC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14ExpoBrownfield0B17MessagingInternalC6sharedACvpZ",
+            "mangledName": "$s14ExpoBrownfield0B17MessagingInternalC6sharedACvpZ",
+            "moduleName": "ExpoBrownfield",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrownfieldMessagingInternal",
+                    "printedName": "ExpoBrownfield.BrownfieldMessagingInternal",
+                    "usr": "s:14ExpoBrownfield0B17MessagingInternalC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14ExpoBrownfield0B17MessagingInternalC6sharedACvgZ",
+                "mangledName": "$s14ExpoBrownfield0B17MessagingInternalC6sharedACvgZ",
+                "moduleName": "ExpoBrownfield",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "addListener",
+            "printedName": "addListener(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.String : Any?]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0B17MessagingInternalC11addListenerySSySDySSypSgGcF",
+            "mangledName": "$s14ExpoBrownfield0B17MessagingInternalC11addListenerySSySDySSypSgGcF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeListener",
+            "printedName": "removeListener(id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0B17MessagingInternalC14removeListener2idySS_tF",
+            "mangledName": "$s14ExpoBrownfield0B17MessagingInternalC14removeListener2idySS_tF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendMessage",
+            "printedName": "sendMessage(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any?]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0B17MessagingInternalC11sendMessageyySDySSypSgGF",
+            "mangledName": "$s14ExpoBrownfield0B17MessagingInternalC11sendMessageyySDySSypSgGF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14ExpoBrownfield0B17MessagingInternalC",
+        "mangledName": "$s14ExpoBrownfield0B17MessagingInternalC",
+        "moduleName": "ExpoBrownfield",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesCore",
+        "printedName": "ExpoModulesCore",
+        "declKind": "Import",
+        "moduleName": "ExpoBrownfield"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SharedState",
+        "printedName": "SharedState",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SharedState",
+                "printedName": "ExpoBrownfield.SharedState",
+                "usr": "s:14ExpoBrownfield11SharedStateC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14ExpoBrownfield11SharedStateCyACSScfc",
+            "mangledName": "$s14ExpoBrownfield11SharedStateCyACSScfc",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield11SharedStateC3getypSgyF",
+            "mangledName": "$s14ExpoBrownfield11SharedStateC3getypSgyF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield11SharedStateC3setyyypSgF",
+            "mangledName": "$s14ExpoBrownfield11SharedStateC3setyyypSgF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SharedState",
+                "printedName": "ExpoBrownfield.SharedState",
+                "usr": "s:14ExpoBrownfield11SharedStateC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14ExpoBrownfield11SharedStateCACycfc",
+            "mangledName": "$s14ExpoBrownfield11SharedStateCACycfc",
+            "moduleName": "ExpoBrownfield",
+            "overriding": true,
+            "implicit": true,
+            "declAttributes": [
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14ExpoBrownfield11SharedStateC",
+        "mangledName": "$s14ExpoBrownfield11SharedStateC",
+        "moduleName": "ExpoBrownfield",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "superclassUsr": "s:15ExpoModulesCore12SharedObjectC",
+        "superclassNames": [
+          "ExpoModulesCore.SharedObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AnyArgument",
+            "printedName": "AnyArgument",
+            "usr": "s:15ExpoModulesCore11AnyArgumentP",
+            "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnySharedObject",
+            "printedName": "AnySharedObject",
+            "usr": "s:15ExpoModulesCore15AnySharedObjectP",
+            "mangledName": "$s15ExpoModulesCore15AnySharedObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "EventEmitter",
+            "printedName": "EventEmitter",
+            "usr": "s:15ExpoModulesCore12EventEmitterP",
+            "mangledName": "$s15ExpoModulesCore12EventEmitterP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "JavaScriptDecodable",
+            "printedName": "JavaScriptDecodable",
+            "usr": "s:14ExpoModulesJSI19JavaScriptDecodableP",
+            "mangledName": "$s14ExpoModulesJSI19JavaScriptDecodableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "JavaScriptEncodable",
+            "printedName": "JavaScriptEncodable",
+            "usr": "s:14ExpoModulesJSI19JavaScriptEncodableP",
+            "mangledName": "$s14ExpoModulesJSI19JavaScriptEncodableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "ExpoBrownfield"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ExpoBrownfield"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ListenerRef",
+        "printedName": "ListenerRef",
+        "declKind": "Class",
+        "usr": "s:14ExpoBrownfield11ListenerRefC",
+        "mangledName": "$s14ExpoBrownfield11ListenerRefC",
+        "moduleName": "ExpoBrownfield",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BrownfieldStateInternal",
+        "printedName": "BrownfieldStateInternal",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrownfieldStateInternal",
+                "printedName": "ExpoBrownfield.BrownfieldStateInternal",
+                "usr": "s:14ExpoBrownfield0B13StateInternalC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14ExpoBrownfield0B13StateInternalC6sharedACvpZ",
+            "mangledName": "$s14ExpoBrownfield0B13StateInternalC6sharedACvpZ",
+            "moduleName": "ExpoBrownfield",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrownfieldStateInternal",
+                    "printedName": "ExpoBrownfield.BrownfieldStateInternal",
+                    "usr": "s:14ExpoBrownfield0B13StateInternalC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14ExpoBrownfield0B13StateInternalC6sharedACvgZ",
+                "mangledName": "$s14ExpoBrownfield0B13StateInternalC6sharedACvgZ",
+                "moduleName": "ExpoBrownfield",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getOrCreate",
+            "printedName": "getOrCreate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SharedState",
+                "printedName": "ExpoBrownfield.SharedState",
+                "usr": "s:14ExpoBrownfield11SharedStateC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0B13StateInternalC11getOrCreateyAA06SharedC0CSSF",
+            "mangledName": "$s14ExpoBrownfield0B13StateInternalC11getOrCreateyAA06SharedC0CSSF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "get",
+            "printedName": "get(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0B13StateInternalC3getyypSgSSF",
+            "mangledName": "$s14ExpoBrownfield0B13StateInternalC3getyypSgSSF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0B13StateInternalC3setyySS_ypSgtF",
+            "mangledName": "$s14ExpoBrownfield0B13StateInternalC3setyySS_ypSgtF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribe",
+            "printedName": "subscribe(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyCancellable",
+                "printedName": "Combine.AnyCancellable",
+                "usr": "s:7Combine14AnyCancellableC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0B13StateInternalC9subscribey7Combine14AnyCancellableCSS_yypSgctF",
+            "mangledName": "$s14ExpoBrownfield0B13StateInternalC9subscribey7Combine14AnyCancellableCSS_yypSgctF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0B13StateInternalC6deleteyypSgSSF",
+            "mangledName": "$s14ExpoBrownfield0B13StateInternalC6deleteyypSgSSF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "maybeNotifyKeyRecreated",
+            "printedName": "maybeNotifyKeyRecreated(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0B13StateInternalC23maybeNotifyKeyRecreatedyySSF",
+            "mangledName": "$s14ExpoBrownfield0B13StateInternalC23maybeNotifyKeyRecreatedyySSF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setExpoModule",
+            "printedName": "setExpoModule(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ExpoBrownfield.ExpoBrownfieldStateModule?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ExpoBrownfieldStateModule",
+                    "printedName": "ExpoBrownfield.ExpoBrownfieldStateModule",
+                    "usr": "s:14ExpoBrownfield0aB11StateModuleC"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0B13StateInternalC03setA6ModuleyyAA0abcF0CSgF",
+            "mangledName": "$s14ExpoBrownfield0B13StateInternalC03setA6ModuleyyAA0abcF0CSgF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notifySubscribers",
+            "printedName": "notifySubscribers(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoBrownfield0B13StateInternalC17notifySubscribersyySS_ypSgtF",
+            "mangledName": "$s14ExpoBrownfield0B13StateInternalC17notifySubscribersyySS_ypSgtF",
+            "moduleName": "ExpoBrownfield",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:14ExpoBrownfield0B13StateInternalC",
+        "mangledName": "$s14ExpoBrownfield0B13StateInternalC",
+        "moduleName": "ExpoBrownfield",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-brownfield\/generated\/ExpoBrownfield\/ExpoBrownfield\/ExpoBrownfieldModule.swift",
+      "kind": "StringLiteral",
+      "offset": 56,
+      "length": 11,
+      "value": "\"onMessage\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-brownfield\/generated\/ExpoBrownfield\/ExpoBrownfield\/ExpoBrownfieldStateModule.swift",
+      "kind": "StringLiteral",
+      "offset": 55,
+      "length": 16,
+      "value": "\"onKeyRecreated\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-brownfield\/generated\/ExpoBrownfield\/ExpoBrownfield\/Messaging.swift",
+      "kind": "Dictionary",
+      "offset": 337,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-brownfield\/generated\/ExpoBrownfield\/ExpoBrownfield\/State.swift",
+      "kind": "Dictionary",
+      "offset": 410,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-brownfield\/generated\/ExpoBrownfield\/ExpoBrownfield\/State.swift",
+      "kind": "Dictionary",
+      "offset": 469,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-brownfield\/generated\/ExpoBrownfield\/ExpoBrownfield\/State.swift",
+      "kind": "Array",
+      "offset": 514,
+      "length": 2,
+      "value": "[]"
+    }
+  ]
+}

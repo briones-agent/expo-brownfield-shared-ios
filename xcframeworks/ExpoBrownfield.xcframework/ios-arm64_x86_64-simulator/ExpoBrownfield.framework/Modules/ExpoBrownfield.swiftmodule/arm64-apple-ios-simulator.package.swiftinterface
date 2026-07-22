@@ -1,0 +1,59 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-upcoming-feature LibraryEvolution -enable-experimental-feature DebugDescriptionMacro -module-name ExpoBrownfield -package-name expobrownfield
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+import Combine
+import ExpoModulesCore
+@_exported import Foundation
+import Swift
+@_exported import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers public class ExpoBrownfieldModule : ExpoModulesCore.Module {
+  public func definition() -> ExpoModulesCore.ModuleDefinition
+  public func sendMessage(_ message: ExpoBrownfield.BrownfieldMessage)
+  required public init(appContext: ExpoModulesCore.AppContext)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class ExpoBrownfieldStateModule : ExpoModulesCore.Module {
+  public func definition() -> ExpoModulesCore.ModuleDefinition
+  public func notifyKeyRecreated(_ key: Swift.String)
+  required public init(appContext: ExpoModulesCore.AppContext)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ManifestProvider {
+  public static func fetchManifest(bundleURL: Foundation.URL?, completion: @escaping ([Swift.String : Any]?, Foundation.URL?) -> Swift.Void)
+  @objc deinit
+}
+public typealias BrownfieldMessage = [Swift.String : Any?]
+public typealias BrownfieldCallback = (ExpoBrownfield.BrownfieldMessage) -> Swift.Void
+@_hasMissingDesignatedInitializers public class BrownfieldMessagingInternal {
+  public static let shared: ExpoBrownfield.BrownfieldMessagingInternal
+  @discardableResult
+  public func addListener(_ callback: @escaping ExpoBrownfield.BrownfieldCallback) -> Swift.String
+  public func removeListener(id: Swift.String)
+  public func sendMessage(_ message: ExpoBrownfield.BrownfieldMessage)
+  @objc deinit
+}
+final public class SharedState : ExpoModulesCore.SharedObject {
+  public init(_ key: Swift.String)
+  final public func get() -> Any?
+  final public func set(_ newValue: Any?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ListenerRef {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class BrownfieldStateInternal {
+  public static let shared: ExpoBrownfield.BrownfieldStateInternal
+  final public func getOrCreate(_ key: Swift.String) -> ExpoBrownfield.SharedState
+  final public func get(_ key: Swift.String) -> Any?
+  final public func set(_ key: Swift.String, _ value: Any?)
+  final public func subscribe(_ key: Swift.String, _ callback: @escaping (Any?) -> Swift.Void) -> Combine.AnyCancellable
+  final public func delete(_ key: Swift.String) -> Any?
+  final public func maybeNotifyKeyRecreated(_ key: Swift.String)
+  final public func setExpoModule(_ expoModule: ExpoBrownfield.ExpoBrownfieldStateModule?)
+  final public func notifySubscribers(_ key: Swift.String, _ value: Any?)
+  @objc deinit
+}

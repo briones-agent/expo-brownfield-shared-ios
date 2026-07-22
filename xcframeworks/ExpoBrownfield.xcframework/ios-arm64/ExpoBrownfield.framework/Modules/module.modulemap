@@ -1,0 +1,6 @@
+framework module ExpoBrownfield {
+    use React
+    header "ExpoBrownfield-Swift.h"
+
+    export *
+}
