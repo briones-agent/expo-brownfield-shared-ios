@@ -413,53 +413,42 @@ extension ExpoModulesCore.ValueOrUndefined {
 }
 public protocol AnyArrayBuffer : ExpoModulesCore.AnyArgument, Foundation.ContiguousBytes {
   var byteLength: Swift.Int { get }
-  func copy() -> ExpoModulesCore.ArrayBuffer
+  func copy() -> ExpoModulesCore.NativeArrayBuffer
   var data: Foundation.Data { get }
 }
 extension ExpoModulesCore.AnyArrayBuffer {
   public static func getDynamicType() -> any ExpoModulesCore.AnyDynamicType
 }
-@_hasMissingDesignatedInitializers final public class ArrayBuffer : ExpoModulesCore.AnyArrayBuffer, Swift.Sendable {
+@_hasMissingDesignatedInitializers final public class ArrayBuffer : ExpoModulesCore.AnyArrayBuffer, @unchecked Swift.Sendable {
   final public var byteLength: Swift.Int {
     get
+    set
   }
-  final public var isNativeBacked: Swift.Bool {
-    get
-  }
-  convenience public init(size: Swift.Int, initializeToZero: Swift.Bool = true)
-  @available(*, deprecated, renamed: "init(size:initializeToZero:)", message: "Use ArrayBuffer(size:initializeToZero:) instead.")
-  public static func allocate(size: Swift.Int, initializeToZero: Swift.Bool = true) -> ExpoModulesCore.ArrayBuffer
-  @objc deinit
-  final public func copy() -> ExpoModulesCore.ArrayBuffer
+  final public func copy() -> ExpoModulesCore.NativeArrayBuffer
   final public var data: Foundation.Data {
     get
   }
   final public func withUnsafeBytes<R>(_ body: (Swift.UnsafeRawBufferPointer) throws -> R) rethrows -> R
-  final public func withUnsafeMutableBytes<R>(_ body: (Swift.UnsafeMutableRawBufferPointer) throws -> R) rethrows -> R
-  @usableFromInline
-  final internal func asJavaScriptArrayBuffer(runtime: ExpoModulesJSI.JavaScriptRuntime) -> ExpoModulesJSI.JavaScriptArrayBuffer
-  public static func copy(of other: Swift.UnsafeRawPointer, count: Swift.Int) -> ExpoModulesCore.ArrayBuffer
-  public static func copy(data: Foundation.Data) throws -> ExpoModulesCore.ArrayBuffer
-  public static func wrap(dataWithoutCopy data: Swift.UnsafeMutableRawBufferPointer, cleanup: @escaping () -> Swift.Void) throws -> ExpoModulesCore.ArrayBuffer
-  public static func wrap(dataWithoutCopy data: Foundation.Data) -> ExpoModulesCore.ArrayBuffer
-  @usableFromInline
-  internal static func from(value: borrowing ExpoModulesJSI.JavaScriptValue) throws -> ExpoModulesCore.ArrayBuffer
-  @usableFromInline
-  internal static func from(unownedValue: borrowing ExpoModulesJSI.JavaScriptUnownedValue, in runtime: borrowing ExpoModulesJSI.JavaScriptRuntime) throws -> ExpoModulesCore.ArrayBuffer
+  @objc deinit
 }
-extension ExpoModulesCore.ArrayBuffer : ExpoModulesJSI.JavaScriptDecodable, ExpoModulesJSI.JavaScriptEncodable {
-  @ExpoModulesJSI.JavaScriptActor @inlinable public static func decode(_ value: borrowing ExpoModulesJSI.JavaScriptValue, in runtime: borrowing ExpoModulesJSI.JavaScriptRuntime) throws -> ExpoModulesCore.ArrayBuffer {
-    return try ArrayBuffer.from(value: value)
+@_hasMissingDesignatedInitializers final public class NativeArrayBuffer : ExpoModulesCore.AnyArrayBuffer, @unchecked Swift.Sendable {
+  final public let byteLength: Swift.Int
+  @objc deinit
+  final public func copy() -> ExpoModulesCore.NativeArrayBuffer
+  final public var data: Foundation.Data {
+    get
   }
-  @ExpoModulesJSI.JavaScriptActor @inlinable public static func decode(_ value: borrowing ExpoModulesJSI.JavaScriptUnownedValue, in runtime: borrowing ExpoModulesJSI.JavaScriptRuntime) throws -> ExpoModulesCore.ArrayBuffer {
-    return try ArrayBuffer.from(unownedValue: value, in: runtime)
-  }
-  @ExpoModulesJSI.JavaScriptActor @inlinable public static func encode(_ value: ExpoModulesCore.ArrayBuffer, in runtime: borrowing ExpoModulesJSI.JavaScriptRuntime) throws -> ExpoModulesJSI.JavaScriptValue {
-    return value.asJavaScriptArrayBuffer(runtime: copy runtime).asValue()
-  }
+  final public func withUnsafeBytes<R>(_ body: (Swift.UnsafeRawBufferPointer) throws -> R) rethrows -> R
+  public static func allocate(size: Swift.Int, initializeToZero: Swift.Bool = true) -> ExpoModulesCore.NativeArrayBuffer
+  public static func copy(of other: Swift.UnsafeRawPointer, count: Swift.Int) -> ExpoModulesCore.NativeArrayBuffer
+  public static func copy(data: Foundation.Data) throws -> ExpoModulesCore.NativeArrayBuffer
+  public static func wrap(dataWithoutCopy data: Swift.UnsafeMutableRawBufferPointer, cleanup: @escaping () -> Swift.Void) throws -> ExpoModulesCore.NativeArrayBuffer
+  public static func wrap(dataWithoutCopy data: Foundation.Data) -> ExpoModulesCore.NativeArrayBuffer
 }
-@available(*, deprecated, renamed: "ArrayBuffer", message: "Use ArrayBuffer instead.")
-public typealias NativeArrayBuffer = ExpoModulesCore.ArrayBuffer
+extension ExpoModulesCore.NativeArrayBuffer : ExpoModulesJSI.JavaScriptRepresentable {
+  public static func fromJavaScriptValue(_ value: ExpoModulesJSI.JavaScriptValue) -> ExpoModulesCore.NativeArrayBuffer
+  final public func toJavaScriptValue(in runtime: ExpoModulesJSI.JavaScriptRuntime) -> ExpoModulesJSI.JavaScriptValue
+}
 @_inheritsConvenienceInitializers final public class MissingBaseAddressError : ExpoModulesCore.Exception, @unchecked Swift.Sendable {
   override final public var reason: Swift.String {
     get
@@ -947,7 +936,6 @@ public struct MainValueConverter : ~Swift.Copyable {
   final public func has(moduleWithName moduleName: Swift.String) -> Swift.Bool
   final public func get(moduleHolderForName moduleName: Swift.String) -> ExpoModulesCore.ModuleHolder?
   final public func get(moduleWithName moduleName: Swift.String) -> (any ExpoModulesCore.AnyModule)?
-  final public func getModule<ModuleProtocol>(implementing protocol: ModuleProtocol.Type) -> ModuleProtocol?
   final public func getModuleNames() -> [Swift.String]
   final public func makeIterator() -> Swift.IndexingIterator<[ExpoModulesCore.ModuleHolder]>
   public typealias Iterator = Swift.IndexingIterator<[ExpoModulesCore.ModuleHolder]>
@@ -964,14 +952,10 @@ open class BaseModule {
   weak public var appContext: ExpoModulesCore.AppContext? {
     get
   }
-  @available(*, unavailable, message: "Module's initializer cannot be overridden, override the \"didCreate\" lifecycle hook instead.")
+  @available(*, unavailable, message: "Module's initializer cannot be overriden, use \"onCreate\" definition component instead.")
   public init()
   required public init(appContext: ExpoModulesCore.AppContext)
   public func sendEvent(_ eventName: Swift.String, _ body: [Swift.String : Any?] = [:])
-  open func didCreate()
-  open func willDestroy()
-  open func didStartListening(event: Swift.String)
-  open func didStopListening(event: Swift.String)
   @objc deinit
 }
 extension ExpoModulesCore.BaseModule : ExpoModulesCore.EventEmitter {
@@ -1057,10 +1041,6 @@ public protocol AnyModule : AnyObject, ExpoModulesCore.AnyArgument {
   static var _jsName: Swift.String { get }
   func _synthesizedDefinition() -> [any ExpoModulesCore.AnyDefinition]
   @ExpoModulesJSI.JavaScriptActor func _decorateModule(object: borrowing ExpoModulesJSI.JavaScriptObject, in runtime: ExpoModulesJSI.JavaScriptRuntime) throws
-  func didCreate()
-  func willDestroy()
-  func didStartListening(event: Swift.String)
-  func didStopListening(event: Swift.String)
 }
 extension ExpoModulesCore.AnyModule {
   public static var _jsName: Swift.String {
@@ -1069,10 +1049,6 @@ extension ExpoModulesCore.AnyModule {
   public func definition() -> ExpoModulesCore.ModuleDefinition
   public func _synthesizedDefinition() -> [any ExpoModulesCore.AnyDefinition]
   @ExpoModulesJSI.JavaScriptActor public func _decorateModule(object: borrowing ExpoModulesJSI.JavaScriptObject, in runtime: ExpoModulesJSI.JavaScriptRuntime) throws
-  public func didCreate()
-  public func willDestroy()
-  public func didStartListening(event: Swift.String)
-  public func didStopListening(event: Swift.String)
 }
 public protocol AnyViewDefinition : Swift.Sendable {
   var props: [any ExpoModulesCore.AnyViewProp] { get }
@@ -1828,7 +1804,6 @@ final public class Mutex<Value> : @unchecked Swift.Sendable {
 }
 public struct Utilities {
   public static func urlFrom(string: Swift.String) -> Foundation.URL?
-  @_Concurrency.MainActor public static func keyWindow() -> UIKit.UIWindow?
   nonisolated public func currentViewController() -> UIKit.UIViewController?
 }
 extension ExpoModulesCore.ExpoAppDelegateSubscriberManager : Swift.Sendable {}

@@ -27,16 +27,6 @@
       },
       {
         "kind": "Import",
-        "name": "QuickLook",
-        "printedName": "QuickLook",
-        "declKind": "Import",
-        "moduleName": "ExpoFileSystem",
-        "declAttributes": [
-          "Exported"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "ExpoFileSystem_ios_objc",
         "printedName": "ExpoFileSystem_ios_objc",
         "declKind": "Import",
@@ -188,13 +178,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "QuickLook",
-        "printedName": "QuickLook",
-        "declKind": "Import",
-        "moduleName": "ExpoFileSystem"
-      },
-      {
         "kind": "TypeDecl",
         "name": "FileSystemModule",
         "printedName": "FileSystemModule",
@@ -317,13 +300,6 @@
         "kind": "Import",
         "name": "ExpoModulesCore",
         "printedName": "ExpoModulesCore",
-        "declKind": "Import",
-        "moduleName": "ExpoFileSystem"
-      },
-      {
-        "kind": "Import",
-        "name": "QuickLook",
-        "printedName": "QuickLook",
         "declKind": "Import",
         "moduleName": "ExpoFileSystem"
       },
@@ -816,441 +792,427 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FilePickingUtils.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FilePickingUtils.swift",
       "kind": "BooleanLiteral",
       "offset": 887,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownload.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownload.swift",
       "kind": "StringLiteral",
       "offset": 585,
       "length": 43,
       "value": "\"expo.modules.filesystem.DownloadTaskStore\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownload.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownload.swift",
       "kind": "Dictionary",
       "offset": 686,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownload.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownload.swift",
       "kind": "Dictionary",
       "offset": 749,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownload.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownload.swift",
       "kind": "FloatLiteral",
       "offset": 6507,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownload.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownload.swift",
       "kind": "IntegerLiteral",
       "offset": 6562,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
       "kind": "Dictionary",
       "offset": 1793,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
       "kind": "StringLiteral",
       "offset": 6490,
       "length": 25,
       "value": "\"expo.modules.filesystem\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
       "kind": "StringLiteral",
       "offset": 6527,
       "length": 62,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
       "kind": "StringLiteral",
       "offset": 6547,
       "length": 1,
       "value": "\".expo-file-system.network-task.background\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
       "kind": "BooleanLiteral",
       "offset": 7133,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
       "kind": "IntegerLiteral",
       "offset": 9760,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemDownloadTask.swift",
       "kind": "FloatLiteral",
       "offset": 9817,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFile.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFile.swift",
       "kind": "BooleanLiteral",
       "offset": 2465,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFile.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFile.swift",
       "kind": "BooleanLiteral",
       "offset": 2810,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFile.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFile.swift",
       "kind": "BooleanLiteral",
-      "offset": 3086,
+      "offset": 3079,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFileHandle.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFileHandle.swift",
       "kind": "StringLiteral",
       "offset": 108,
       "length": 3,
       "value": "\"r\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFileHandle.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFileHandle.swift",
       "kind": "StringLiteral",
       "offset": 150,
       "length": 4,
       "value": "\"rw\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFileHandle.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFileHandle.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 3,
       "value": "\"w\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFileHandle.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFileHandle.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 4,
       "value": "\"wa\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFileHandle.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFileHandle.swift",
       "kind": "StringLiteral",
       "offset": 322,
       "length": 4,
       "value": "\"wt\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemFileHandle.swift",
-      "kind": "BooleanLiteral",
-      "offset": 717,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemModule.swift",
-      "kind": "BooleanLiteral",
-      "offset": 380,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemRecords.swift",
       "kind": "BooleanLiteral",
       "offset": 154,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemRecords.swift",
       "kind": "BooleanLiteral",
       "offset": 191,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemRecords.swift",
       "kind": "BooleanLiteral",
       "offset": 229,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemRecords.swift",
       "kind": "BooleanLiteral",
       "offset": 343,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemRecords.swift",
       "kind": "BooleanLiteral",
       "offset": 418,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemRecords.swift",
       "kind": "BooleanLiteral",
-      "offset": 1334,
+      "offset": 1236,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
       "kind": "IntegerLiteral",
       "offset": 176,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
       "kind": "IntegerLiteral",
       "offset": 197,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
       "kind": "StringLiteral",
       "offset": 356,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
       "kind": "BooleanLiteral",
       "offset": 1103,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
       "kind": "IntegerLiteral",
       "offset": 1188,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
       "kind": "FloatLiteral",
       "offset": 1245,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
       "kind": "BooleanLiteral",
       "offset": 3786,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemUploadTask.swift",
       "kind": "BooleanLiteral",
       "offset": 7858,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
       "kind": "IntegerLiteral",
       "offset": 188,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
       "kind": "StringLiteral",
       "offset": 298,
       "length": 10,
       "value": "\"modified\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
       "kind": "StringLiteral",
       "offset": 337,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
       "kind": "BooleanLiteral",
       "offset": 373,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
       "kind": "IntegerLiteral",
       "offset": 416,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
       "kind": "StringLiteral",
       "offset": 804,
       "length": 25,
       "value": "\"expo.filesystem.watcher\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
       "kind": "Array",
       "offset": 998,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/FileSystemWatcher.swift",
       "kind": "BooleanLiteral",
       "offset": 1038,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemBackgroundSessionHandler.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemBackgroundSessionHandler.swift",
       "kind": "Dictionary",
       "offset": 346,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemHelpers.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemHelpers.swift",
       "kind": "StringLiteral",
       "offset": 132,
       "length": 7,
       "value": "\"ph:\/\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemHelpers.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemHelpers.swift",
       "kind": "BooleanLiteral",
       "offset": 1287,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyModule.swift",
       "kind": "StringLiteral",
       "offset": 140,
       "length": 35,
       "value": "\"expo-file-system.downloadProgress\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyModule.swift",
       "kind": "StringLiteral",
       "offset": 212,
       "length": 33,
       "value": "\"expo-file-system.uploadProgress\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
       "kind": "BooleanLiteral",
       "offset": 142,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
       "kind": "BooleanLiteral",
       "offset": 380,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
       "kind": "BooleanLiteral",
       "offset": 454,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
       "kind": "BooleanLiteral",
       "offset": 896,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
       "kind": "BooleanLiteral",
       "offset": 969,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
       "kind": "BooleanLiteral",
       "offset": 1002,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
       "kind": "IntegerLiteral",
       "offset": 1510,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
       "kind": "IntegerLiteral",
       "offset": 1532,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
       "kind": "StringLiteral",
       "offset": 1589,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
       "kind": "StringLiteral",
       "offset": 1609,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
       "kind": "StringLiteral",
       "offset": 1630,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
       "kind": "IntegerLiteral",
       "offset": 1705,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-file-system\/generated\/ExpoFileSystem\/ExpoFileSystem\/Legacy\/FileSystemLegacyRecords.swift",
       "kind": "IntegerLiteral",
       "offset": 1726,
       "length": 1,

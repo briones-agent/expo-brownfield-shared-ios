@@ -436,39 +436,8 @@ extension ExpoModulesJSI.JavaScriptType where Self : ~Copyable {
   nonisolated public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
     get
   }
-  @_alwaysEmitIntoClient @inline(__always) public static func assumeIsolated<T>(_ operation: @ExpoModulesJSI.JavaScriptActor @Sendable () -> T) -> T where T : ~Copyable {
-    typealias IsolatedRunner = @JavaScriptActor (@JavaScriptActor () -> T) -> T
-    typealias NonisolatedRunner = (@JavaScriptActor () -> T) -> T
-
-     
-    checkIsolated()
-
-     
-     
-    let runner = unsafeBitCast(runIsolated as IsolatedRunner, to: NonisolatedRunner.self)
-    return runner(operation)
-  }
-  @_alwaysEmitIntoClient @inline(__always) public static func assumeIsolated<T, E>(_ operation: @ExpoModulesJSI.JavaScriptActor @Sendable () throws(E) -> T) throws(E) -> T where E : Swift.Error, T : ~Copyable {
-     
-     
-    let result: Result<T, E> = assumeIsolated {
-      return Result(catching: operation)
-    }
-    return try result.get()
-  }
-  @inlinable @inline(__always) public static func checkIsolated() {
-     
-     
-     
-    assert(
-       
-      Thread.current.name == "com.facebook.react.runtime.JavaScript" || !Thread.isMultiThreaded()
-        || ProcessInfo.processInfo.processName == "xctest",
-      "JavaScriptActor operations must be run on the JavaScript thread"
-    )
-  }
-  @usableFromInline
-  @ExpoModulesJSI.JavaScriptActor internal static func runIsolated<T>(_ operation: @ExpoModulesJSI.JavaScriptActor @Sendable () -> T) -> T where T : ~Copyable
+  public static func assumeIsolated<T>(_ operation: @ExpoModulesJSI.JavaScriptActor @Sendable () throws -> T) rethrows -> T where T : ~Copyable
+  public static func checkIsolated()
   public typealias ActorType = ExpoModulesJSI.JavaScriptActor
   @objc deinit
 }
@@ -531,8 +500,7 @@ extension ExpoModulesJSI.JavaScriptRef : ExpoModulesJSI.JavaScriptRepresentable 
   @ExpoModulesJSI.JavaScriptActor public func createFunction(_ function: sending @escaping ExpoModulesJSI.JavaScriptRuntime.SyncFunctionClosure) -> ExpoModulesJSI.JavaScriptFunction
   public typealias UnownedThisSyncFunctionClosure = @ExpoModulesJSI.JavaScriptActor @Sendable (_ this: borrowing ExpoModulesJSI.JavaScriptUnownedValue, _ arguments: consuming ExpoModulesJSI.JavaScriptValuesBuffer) throws -> ExpoModulesJSI.JavaScriptValue
   @_disfavoredOverload @ExpoModulesJSI.JavaScriptActor public func createFunction(_ name: Swift.String, _ function: sending @escaping ExpoModulesJSI.JavaScriptRuntime.UnownedThisSyncFunctionClosure) -> ExpoModulesJSI.JavaScriptFunction
-  public typealias AsyncFunctionClosure = @ExpoModulesJSI.JavaScriptActor @Sendable (_ this: borrowing ExpoModulesJSI.JavaScriptUnownedValue, _ arguments: consuming ExpoModulesJSI.JavaScriptValuesBuffer) throws -> ExpoModulesJSI.JavaScriptRuntime.AsyncFunctionBody
-  public typealias AsyncFunctionBody = @ExpoModulesJSI.JavaScriptActor @Sendable () async throws -> ExpoModulesJSI.JavaScriptValue
+  public typealias AsyncFunctionClosure = @ExpoModulesJSI.JavaScriptActor @Sendable (_ this: ExpoModulesJSI.JavaScriptValue, _ arguments: consuming ExpoModulesJSI.JavaScriptValuesBuffer) async throws -> ExpoModulesJSI.JavaScriptValue
   @ExpoModulesJSI.JavaScriptActor public func createAsyncFunction(_ name: Swift.String, _ function: sending @escaping ExpoModulesJSI.JavaScriptRuntime.AsyncFunctionClosure) -> ExpoModulesJSI.JavaScriptFunction
   public var supportsAsyncScheduling: Swift.Bool {
     get

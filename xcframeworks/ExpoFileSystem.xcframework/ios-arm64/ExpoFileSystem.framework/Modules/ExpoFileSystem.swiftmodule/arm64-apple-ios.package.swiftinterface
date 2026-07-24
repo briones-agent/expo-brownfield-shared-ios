@@ -10,12 +10,10 @@ import ExpoModulesCore
 @_exported import Foundation
 import MobileCoreServices
 import Photos
-@_exported import QuickLook
 import Swift
 @_exported import UIKit
 import UniformTypeIdentifiers
 import _Concurrency
-import _QuickLook_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @available(iOS 14, tvOS 14, *)

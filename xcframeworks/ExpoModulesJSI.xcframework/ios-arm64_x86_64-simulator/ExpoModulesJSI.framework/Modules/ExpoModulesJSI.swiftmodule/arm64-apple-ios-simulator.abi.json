@@ -2281,33 +2281,8 @@
           },
           {
             "kind": "Function",
-            "name": "checkIsolated",
-            "printedName": "checkIsolated()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:14ExpoModulesJSI15JavaScriptActorC13checkIsolatedyyFZ",
-            "mangledName": "$s14ExpoModulesJSI15JavaScriptActorC13checkIsolatedyyFZ",
-            "moduleName": "ExpoModulesJSI",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "Inline",
-              "Inlinable",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "runIsolated",
-            "printedName": "runIsolated(_:)",
+            "name": "assumeIsolated",
+            "printedName": "assumeIsolated(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2317,7 +2292,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "() -> τ_0_0",
+                "printedName": "() throws -> τ_0_0",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2336,17 +2311,41 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14ExpoModulesJSI15JavaScriptActorC11runIsolatedyxxyYbACYcXERi_zlFZ",
-            "mangledName": "$s14ExpoModulesJSI15JavaScriptActorC11runIsolatedyxxyYbACYcXERi_zlFZ",
+            "usr": "s:14ExpoModulesJSI15JavaScriptActorC14assumeIsolatedyxxyYbKACYcXEKRi_zlFZ",
+            "mangledName": "$s14ExpoModulesJSI15JavaScriptActorC14assumeIsolatedyxxyYbKACYcXEKRi_zlFZ",
             "moduleName": "ExpoModulesJSI",
             "genericSig": "<τ_0_0 where τ_0_0 : ~Copyable>",
             "sugared_genericSig": "<T where T : ~Copyable>",
             "static": true,
             "declAttributes": [
               "Final",
+              "Rethrows",
               "AccessControl",
-              "UsableFromInline",
-              "Custom"
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkIsolated",
+            "printedName": "checkIsolated()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14ExpoModulesJSI15JavaScriptActorC13checkIsolatedyyFZ",
+            "mangledName": "$s14ExpoModulesJSI15JavaScriptActorC13checkIsolatedyyFZ",
+            "moduleName": "ExpoModulesJSI",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -4223,36 +4222,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(borrowing ExpoModulesJSI.JavaScriptUnownedValue, consuming ExpoModulesJSI.JavaScriptValuesBuffer) throws -> () async throws -> ExpoModulesJSI.JavaScriptValue",
+                "printedName": "(ExpoModulesJSI.JavaScriptValue, consuming ExpoModulesJSI.JavaScriptValuesBuffer) async throws -> ExpoModulesJSI.JavaScriptValue",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() async throws -> ExpoModulesJSI.JavaScriptValue",
+                    "kind": "TypeNominal",
+                    "name": "JavaScriptValue",
+                    "printedName": "ExpoModulesJSI.JavaScriptValue",
+                    "usr": "s:14ExpoModulesJSI15JavaScriptValueC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(ExpoModulesJSI.JavaScriptValue, ExpoModulesJSI.JavaScriptValuesBuffer)",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JavaScriptValue",
                         "printedName": "ExpoModulesJSI.JavaScriptValue",
                         "usr": "s:14ExpoModulesJSI15JavaScriptValueC"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(ExpoModulesJSI.JavaScriptUnownedValue, ExpoModulesJSI.JavaScriptValuesBuffer)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "JavaScriptUnownedValue",
-                        "printedName": "ExpoModulesJSI.JavaScriptUnownedValue",
-                        "usr": "s:14ExpoModulesJSI22JavaScriptUnownedValueV"
                       },
                       {
                         "kind": "TypeNominal",
@@ -4267,8 +4254,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14ExpoModulesJSI17JavaScriptRuntimeC19createAsyncFunctionyAA0deI0VSS_AA0dE5ValueCyYaYbKAA0dE5ActorCYccAA0de7UnownedJ0V_AA0dE12ValuesBufferVntYbKAJYccntF",
-            "mangledName": "$s14ExpoModulesJSI17JavaScriptRuntimeC19createAsyncFunctionyAA0deI0VSS_AA0dE5ValueCyYaYbKAA0dE5ActorCYccAA0de7UnownedJ0V_AA0dE12ValuesBufferVntYbKAJYccntF",
+            "usr": "s:14ExpoModulesJSI17JavaScriptRuntimeC19createAsyncFunctionyAA0deI0VSS_AA0dE5ValueCAH_AA0dE12ValuesBufferVntYaYbKAA0dE5ActorCYccntF",
+            "mangledName": "$s14ExpoModulesJSI17JavaScriptRuntimeC19createAsyncFunctionyAA0deI0VSS_AA0dE5ValueCAH_AA0dE12ValuesBufferVntYaYbKAA0dE5ActorCYccntF",
             "moduleName": "ExpoModulesJSI",
             "declAttributes": [
               "AccessControl",
@@ -10284,36 +10271,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(borrowing ExpoModulesJSI.JavaScriptUnownedValue, consuming ExpoModulesJSI.JavaScriptValuesBuffer) throws -> () async throws -> ExpoModulesJSI.JavaScriptValue",
+                "printedName": "(ExpoModulesJSI.JavaScriptValue, consuming ExpoModulesJSI.JavaScriptValuesBuffer) async throws -> ExpoModulesJSI.JavaScriptValue",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() async throws -> ExpoModulesJSI.JavaScriptValue",
+                    "kind": "TypeNominal",
+                    "name": "JavaScriptValue",
+                    "printedName": "ExpoModulesJSI.JavaScriptValue",
+                    "usr": "s:14ExpoModulesJSI15JavaScriptValueC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(ExpoModulesJSI.JavaScriptValue, ExpoModulesJSI.JavaScriptValuesBuffer)",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "JavaScriptValue",
                         "printedName": "ExpoModulesJSI.JavaScriptValue",
                         "usr": "s:14ExpoModulesJSI15JavaScriptValueC"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(ExpoModulesJSI.JavaScriptUnownedValue, ExpoModulesJSI.JavaScriptValuesBuffer)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "JavaScriptUnownedValue",
-                        "printedName": "ExpoModulesJSI.JavaScriptUnownedValue",
-                        "usr": "s:14ExpoModulesJSI22JavaScriptUnownedValueV"
                       },
                       {
                         "kind": "TypeNominal",
@@ -10328,8 +10303,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14ExpoModulesJSI16JavaScriptObjectV11setProperty_8functionySS_AA0dE5ValueCyYaYbKAA0dE5ActorCYccAA0de7UnownedJ0V_AA0dE12ValuesBufferVntYbKAIYccntF",
-            "mangledName": "$s14ExpoModulesJSI16JavaScriptObjectV11setProperty_8functionySS_AA0dE5ValueCyYaYbKAA0dE5ActorCYccAA0de7UnownedJ0V_AA0dE12ValuesBufferVntYbKAIYccntF",
+            "usr": "s:14ExpoModulesJSI16JavaScriptObjectV11setProperty_8functionySS_AA0dE5ValueCAG_AA0dE12ValuesBufferVntYaYbKAA0dE5ActorCYccntF",
+            "mangledName": "$s14ExpoModulesJSI16JavaScriptObjectV11setProperty_8functionySS_AA0dE5ValueCAG_AA0dE12ValuesBufferVntYaYbKAA0dE5ActorCYccntF",
             "moduleName": "ExpoModulesJSI",
             "declAttributes": [
               "AccessControl",
@@ -27634,23 +27609,9 @@
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/JavaScriptActor.swift",
       "kind": "StringLiteral",
-      "offset": 3168,
+      "offset": 142,
       "length": 39,
       "value": "\"com.facebook.react.runtime.JavaScript\""
-    },
-    {
-      "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/JavaScriptActor.swift",
-      "kind": "StringLiteral",
-      "offset": 3287,
-      "length": 8,
-      "value": "\"xctest\""
-    },
-    {
-      "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/JavaScriptActor.swift",
-      "kind": "StringLiteral",
-      "offset": 3303,
-      "length": 65,
-      "value": "\"JavaScriptActor operations must be run on the JavaScript thread\""
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/JavaScriptRuntime.swift",
@@ -27739,42 +27700,42 @@
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/JavaScriptRuntime.swift",
       "kind": "IntegerLiteral",
-      "offset": 28453,
+      "offset": 27280,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/JavaScriptRuntime.swift",
       "kind": "IntegerLiteral",
-      "offset": 28479,
+      "offset": 27306,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/JavaScriptRuntime.swift",
       "kind": "IntegerLiteral",
-      "offset": 28499,
+      "offset": 27326,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/JavaScriptRuntime.swift",
       "kind": "IntegerLiteral",
-      "offset": 28516,
+      "offset": 27343,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/JavaScriptRuntime.swift",
       "kind": "IntegerLiteral",
-      "offset": 28534,
+      "offset": 27361,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/JavaScriptRuntime.swift",
       "kind": "Dictionary",
-      "offset": 31462,
+      "offset": 30289,
       "length": 3,
       "value": "[]"
     },
@@ -27809,70 +27770,70 @@
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/Values\/JavaScriptObject.swift",
       "kind": "Array",
-      "offset": 13526,
+      "offset": 13614,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/Values\/JavaScriptObject.swift",
       "kind": "IntegerLiteral",
-      "offset": 19983,
+      "offset": 20071,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/Values\/JavaScriptObject.swift",
       "kind": "IntegerLiteral",
-      "offset": 19988,
+      "offset": 20076,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/Values\/JavaScriptObject.swift",
       "kind": "IntegerLiteral",
-      "offset": 20339,
+      "offset": 20427,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/Values\/JavaScriptObject.swift",
       "kind": "IntegerLiteral",
-      "offset": 20344,
+      "offset": 20432,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/Values\/JavaScriptObject.swift",
       "kind": "IntegerLiteral",
-      "offset": 20682,
+      "offset": 20770,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/Values\/JavaScriptObject.swift",
       "kind": "IntegerLiteral",
-      "offset": 20687,
+      "offset": 20775,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/Values\/JavaScriptObject.swift",
       "kind": "BooleanLiteral",
-      "offset": 22592,
+      "offset": 22680,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/Values\/JavaScriptObject.swift",
       "kind": "BooleanLiteral",
-      "offset": 22618,
+      "offset": 22706,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/briones\/Developer\/expo-brownfield-shared-ios\/node_modules\/expo-modules-jsi\/apple\/Sources\/ExpoModulesJSI\/Runtime\/Values\/JavaScriptObject.swift",
       "kind": "BooleanLiteral",
-      "offset": 22642,
+      "offset": 22730,
       "length": 5,
       "value": "false"
     },

@@ -10238,14 +10238,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ArrayBuffer",
-                "printedName": "ExpoModulesCore.ArrayBuffer",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC"
+                "name": "NativeArrayBuffer",
+                "printedName": "ExpoModulesCore.NativeArrayBuffer",
+                "usr": "s:15ExpoModulesCore17NativeArrayBufferC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ExpoModulesCore14AnyArrayBufferP4copyAA0eF0CyF",
-            "mangledName": "$s15ExpoModulesCore14AnyArrayBufferP4copyAA0eF0CyF",
+            "usr": "s:15ExpoModulesCore14AnyArrayBufferP4copyAA06NativeeF0CyF",
+            "mangledName": "$s15ExpoModulesCore14AnyArrayBufferP4copyAA06NativeeF0CyF",
             "moduleName": "ExpoModulesCore",
             "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesCore.AnyArrayBuffer>",
             "sugared_genericSig": "<Self where Self : ExpoModulesCore.AnyArrayBuffer>",
@@ -10401,7 +10401,9 @@
             "moduleName": "ExpoModulesCore",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "Lazy",
+              "AccessControl",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -10420,132 +10422,61 @@
                 "usr": "s:15ExpoModulesCore11ArrayBufferC10byteLengthSivg",
                 "mangledName": "$s15ExpoModulesCore11ArrayBufferC10byteLengthSivg",
                 "moduleName": "ExpoModulesCore",
+                "implicit": true,
                 "declAttributes": [
                   "Final"
                 ],
                 "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isNativeBacked",
-            "printedName": "isNativeBacked",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC14isNativeBackedSbvp",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC14isNativeBackedSbvp",
-            "moduleName": "ExpoModulesCore",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
+              },
               {
                 "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "name": "Set",
+                "printedName": "Set()",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC14isNativeBackedSbvg",
-                "mangledName": "$s15ExpoModulesCore11ArrayBufferC14isNativeBackedSbvg",
+                "usr": "s:15ExpoModulesCore11ArrayBufferC10byteLengthSivs",
+                "mangledName": "$s15ExpoModulesCore11ArrayBufferC10byteLengthSivs",
                 "moduleName": "ExpoModulesCore",
+                "implicit": true,
                 "declAttributes": [
                   "Final"
                 ],
-                "accessorKind": "get"
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ExpoModulesCore11ArrayBufferC10byteLengthSivM",
+                "mangledName": "$s15ExpoModulesCore11ArrayBufferC10byteLengthSivM",
+                "moduleName": "ExpoModulesCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
               }
             ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(size:initializeToZero:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ArrayBuffer",
-                "printedName": "ExpoModulesCore.ArrayBuffer",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC4size16initializeToZeroACSi_Sbtcfc",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC4size16initializeToZeroACSi_Sbtcfc",
-            "moduleName": "ExpoModulesCore",
-            "declAttributes": [
-              "Convenience",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Convenience"
-          },
-          {
-            "kind": "Function",
-            "name": "allocate",
-            "printedName": "allocate(size:initializeToZero:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ArrayBuffer",
-                "printedName": "ExpoModulesCore.ArrayBuffer",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC8allocate4size16initializeToZeroACSi_SbtFZ",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC8allocate4size16initializeToZeroACSi_SbtFZ",
-            "moduleName": "ExpoModulesCore",
-            "static": true,
-            "deprecated": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "Available",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -10554,19 +10485,18 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ArrayBuffer",
-                "printedName": "ExpoModulesCore.ArrayBuffer",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC"
+                "name": "NativeArrayBuffer",
+                "printedName": "ExpoModulesCore.NativeArrayBuffer",
+                "usr": "s:15ExpoModulesCore17NativeArrayBufferC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC4copyACyF",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC4copyACyF",
+            "usr": "s:15ExpoModulesCore11ArrayBufferC4copyAA06NativedE0CyF",
+            "mangledName": "$s15ExpoModulesCore11ArrayBufferC4copyAA06NativedE0CyF",
             "moduleName": "ExpoModulesCore",
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -10659,11 +10589,204 @@
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15ExpoModulesCore11ArrayBufferC",
+        "mangledName": "$s15ExpoModulesCore11ArrayBufferC",
+        "moduleName": "ExpoModulesCore",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "AnyArrayBuffer",
+            "printedName": "AnyArrayBuffer",
+            "usr": "s:15ExpoModulesCore14AnyArrayBufferP",
+            "mangledName": "$s15ExpoModulesCore14AnyArrayBufferP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyArgument",
+            "printedName": "AnyArgument",
+            "usr": "s:15ExpoModulesCore11AnyArgumentP",
+            "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ContiguousBytes",
+            "printedName": "ContiguousBytes",
+            "usr": "s:10Foundation15ContiguousBytesP",
+            "mangledName": "$s10Foundation15ContiguousBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ExpoModulesJSI",
+        "printedName": "ExpoModulesJSI",
+        "declKind": "Import",
+        "moduleName": "ExpoModulesCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NativeArrayBuffer",
+        "printedName": "NativeArrayBuffer",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "byteLength",
+            "printedName": "byteLength",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ExpoModulesCore17NativeArrayBufferC10byteLengthSivp",
+            "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC10byteLengthSivp",
+            "moduleName": "ExpoModulesCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ExpoModulesCore17NativeArrayBufferC10byteLengthSivg",
+                "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC10byteLengthSivg",
+                "moduleName": "ExpoModulesCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Function",
-            "name": "withUnsafeMutableBytes",
-            "printedName": "withUnsafeMutableBytes(_:)",
+            "name": "copy",
+            "printedName": "copy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativeArrayBuffer",
+                "printedName": "ExpoModulesCore.NativeArrayBuffer",
+                "usr": "s:15ExpoModulesCore17NativeArrayBufferC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15ExpoModulesCore17NativeArrayBufferC4copyACyF",
+            "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC4copyACyF",
+            "moduleName": "ExpoModulesCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15ExpoModulesCore17NativeArrayBufferC4data10Foundation4DataVvp",
+            "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC4data10Foundation4DataVvp",
+            "moduleName": "ExpoModulesCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15ExpoModulesCore17NativeArrayBufferC4data10Foundation4DataVvg",
+                "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC4data10Foundation4DataVvg",
+                "moduleName": "ExpoModulesCore",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "withUnsafeBytes",
+            "printedName": "withUnsafeBytes(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10673,7 +10796,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.UnsafeMutableRawBufferPointer) throws -> τ_0_0",
+                "printedName": "(Swift.UnsafeRawBufferPointer) throws -> τ_0_0",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -10682,9 +10805,9 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "UnsafeMutableRawBufferPointer",
-                    "printedName": "Swift.UnsafeMutableRawBufferPointer",
-                    "usr": "s:Sw"
+                    "name": "UnsafeRawBufferPointer",
+                    "printedName": "Swift.UnsafeRawBufferPointer",
+                    "usr": "s:SW"
                   }
                 ],
                 "typeAttributes": [
@@ -10693,8 +10816,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC22withUnsafeMutableBytesyxxSwKXEKlF",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC22withUnsafeMutableBytesyxxSwKXEKlF",
+            "usr": "s:15ExpoModulesCore17NativeArrayBufferC15withUnsafeBytesyxxSWKXEKlF",
+            "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC15withUnsafeBytesyxxSWKXEKlF",
             "moduleName": "ExpoModulesCore",
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<R>",
@@ -10708,29 +10831,37 @@
           },
           {
             "kind": "Function",
-            "name": "asJavaScriptArrayBuffer",
-            "printedName": "asJavaScriptArrayBuffer(runtime:)",
+            "name": "allocate",
+            "printedName": "allocate(size:initializeToZero:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "JavaScriptArrayBuffer",
-                "printedName": "ExpoModulesJSI.JavaScriptArrayBuffer",
-                "usr": "s:14ExpoModulesJSI21JavaScriptArrayBufferV"
+                "name": "NativeArrayBuffer",
+                "printedName": "ExpoModulesCore.NativeArrayBuffer",
+                "usr": "s:15ExpoModulesCore17NativeArrayBufferC"
               },
               {
                 "kind": "TypeNominal",
-                "name": "JavaScriptRuntime",
-                "printedName": "ExpoModulesJSI.JavaScriptRuntime",
-                "usr": "s:14ExpoModulesJSI17JavaScriptRuntimeC"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC012asJavaScriptdE07runtime0aB3JSI0ghdE0VAF0gH7RuntimeC_tF",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC012asJavaScriptdE07runtime0aB3JSI0ghdE0VAF0gH7RuntimeC_tF",
+            "usr": "s:15ExpoModulesCore17NativeArrayBufferC8allocate4size16initializeToZeroACSi_SbtFZ",
+            "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC8allocate4size16initializeToZeroACSi_SbtFZ",
             "moduleName": "ExpoModulesCore",
+            "static": true,
             "declAttributes": [
               "Final",
-              "UsableFromInline",
+              "AccessControl",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -10742,9 +10873,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ArrayBuffer",
-                "printedName": "ExpoModulesCore.ArrayBuffer",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC"
+                "name": "NativeArrayBuffer",
+                "printedName": "ExpoModulesCore.NativeArrayBuffer",
+                "usr": "s:15ExpoModulesCore17NativeArrayBufferC"
               },
               {
                 "kind": "TypeNominal",
@@ -10760,8 +10891,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC4copy2of5countACSV_SitFZ",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC4copy2of5countACSV_SitFZ",
+            "usr": "s:15ExpoModulesCore17NativeArrayBufferC4copy2of5countACSV_SitFZ",
+            "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC4copy2of5countACSV_SitFZ",
             "moduleName": "ExpoModulesCore",
             "static": true,
             "declAttributes": [
@@ -10778,9 +10909,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ArrayBuffer",
-                "printedName": "ExpoModulesCore.ArrayBuffer",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC"
+                "name": "NativeArrayBuffer",
+                "printedName": "ExpoModulesCore.NativeArrayBuffer",
+                "usr": "s:15ExpoModulesCore17NativeArrayBufferC"
               },
               {
                 "kind": "TypeNominal",
@@ -10790,8 +10921,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC4copy4dataAC10Foundation4DataV_tKFZ",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC4copy4dataAC10Foundation4DataV_tKFZ",
+            "usr": "s:15ExpoModulesCore17NativeArrayBufferC4copy4dataAC10Foundation4DataV_tKFZ",
+            "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC4copy4dataAC10Foundation4DataV_tKFZ",
             "moduleName": "ExpoModulesCore",
             "static": true,
             "declAttributes": [
@@ -10809,9 +10940,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ArrayBuffer",
-                "printedName": "ExpoModulesCore.ArrayBuffer",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC"
+                "name": "NativeArrayBuffer",
+                "printedName": "ExpoModulesCore.NativeArrayBuffer",
+                "usr": "s:15ExpoModulesCore17NativeArrayBufferC"
               },
               {
                 "kind": "TypeNominal",
@@ -10838,8 +10969,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC4wrap15dataWithoutCopy7cleanupACSw_yyctKFZ",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC4wrap15dataWithoutCopy7cleanupACSw_yyctKFZ",
+            "usr": "s:15ExpoModulesCore17NativeArrayBufferC4wrap15dataWithoutCopy7cleanupACSw_yyctKFZ",
+            "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC4wrap15dataWithoutCopy7cleanupACSw_yyctKFZ",
             "moduleName": "ExpoModulesCore",
             "static": true,
             "declAttributes": [
@@ -10857,9 +10988,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ArrayBuffer",
-                "printedName": "ExpoModulesCore.ArrayBuffer",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC"
+                "name": "NativeArrayBuffer",
+                "printedName": "ExpoModulesCore.NativeArrayBuffer",
+                "usr": "s:15ExpoModulesCore17NativeArrayBufferC"
               },
               {
                 "kind": "TypeNominal",
@@ -10869,8 +11000,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC4wrap15dataWithoutCopyAC10Foundation4DataV_tFZ",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC4wrap15dataWithoutCopyAC10Foundation4DataV_tFZ",
+            "usr": "s:15ExpoModulesCore17NativeArrayBufferC4wrap15dataWithoutCopyAC10Foundation4DataV_tFZ",
+            "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC4wrap15dataWithoutCopyAC10Foundation4DataV_tFZ",
             "moduleName": "ExpoModulesCore",
             "static": true,
             "declAttributes": [
@@ -10882,164 +11013,38 @@
           },
           {
             "kind": "Function",
-            "name": "from",
-            "printedName": "from(value:)",
+            "name": "fromJavaScriptValue",
+            "printedName": "fromJavaScriptValue(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "ArrayBuffer",
-                "printedName": "ExpoModulesCore.ArrayBuffer",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC"
+                "name": "NativeArrayBuffer",
+                "printedName": "ExpoModulesCore.NativeArrayBuffer",
+                "usr": "s:15ExpoModulesCore17NativeArrayBufferC"
               },
               {
                 "kind": "TypeNominal",
                 "name": "JavaScriptValue",
                 "printedName": "ExpoModulesJSI.JavaScriptValue",
-                "paramValueOwnership": "Shared",
                 "usr": "s:14ExpoModulesJSI15JavaScriptValueC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC4from5valueAC0aB3JSI15JavaScriptValueC_tKFZ",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC4from5valueAC0aB3JSI15JavaScriptValueC_tKFZ",
+            "usr": "s:15ExpoModulesCore17NativeArrayBufferC19fromJavaScriptValueyAC0aB3JSI0hiJ0CFZ",
+            "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC19fromJavaScriptValueyAC0aB3JSI0hiJ0CFZ",
             "moduleName": "ExpoModulesCore",
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "UsableFromInline",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "from",
-            "printedName": "from(unownedValue:in:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ArrayBuffer",
-                "printedName": "ExpoModulesCore.ArrayBuffer",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "JavaScriptUnownedValue",
-                "printedName": "ExpoModulesJSI.JavaScriptUnownedValue",
-                "paramValueOwnership": "Shared",
-                "usr": "s:14ExpoModulesJSI22JavaScriptUnownedValueV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "JavaScriptRuntime",
-                "printedName": "ExpoModulesJSI.JavaScriptRuntime",
-                "paramValueOwnership": "Shared",
-                "usr": "s:14ExpoModulesJSI17JavaScriptRuntimeC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC4from12unownedValue2inAC0aB3JSI017JavaScriptUnownedH0V_AG0kL7RuntimeCtKFZ",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC4from12unownedValue2inAC0aB3JSI017JavaScriptUnownedH0V_AG0kL7RuntimeCtKFZ",
-            "moduleName": "ExpoModulesCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "UsableFromInline",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "decode",
-            "printedName": "decode(_:in:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ArrayBuffer",
-                "printedName": "ExpoModulesCore.ArrayBuffer",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "JavaScriptValue",
-                "printedName": "ExpoModulesJSI.JavaScriptValue",
-                "paramValueOwnership": "Shared",
-                "usr": "s:14ExpoModulesJSI15JavaScriptValueC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "JavaScriptRuntime",
-                "printedName": "ExpoModulesJSI.JavaScriptRuntime",
-                "paramValueOwnership": "Shared",
-                "usr": "s:14ExpoModulesJSI17JavaScriptRuntimeC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC6decode_2inAC0aB3JSI15JavaScriptValueC_AF0iJ7RuntimeCtKFZ",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC6decode_2inAC0aB3JSI15JavaScriptValueC_AF0iJ7RuntimeCtKFZ",
-            "moduleName": "ExpoModulesCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "Inlinable",
-              "Custom",
-              "RawDocComment"
+              "AccessControl"
             ],
             "isFromExtension": true,
-            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "decode",
-            "printedName": "decode(_:in:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ArrayBuffer",
-                "printedName": "ExpoModulesCore.ArrayBuffer",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "JavaScriptUnownedValue",
-                "printedName": "ExpoModulesJSI.JavaScriptUnownedValue",
-                "paramValueOwnership": "Shared",
-                "usr": "s:14ExpoModulesJSI22JavaScriptUnownedValueV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "JavaScriptRuntime",
-                "printedName": "ExpoModulesJSI.JavaScriptRuntime",
-                "paramValueOwnership": "Shared",
-                "usr": "s:14ExpoModulesJSI17JavaScriptRuntimeC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC6decode_2inAC0aB3JSI22JavaScriptUnownedValueV_AF0iJ7RuntimeCtKFZ",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC6decode_2inAC0aB3JSI22JavaScriptUnownedValueV_AF0iJ7RuntimeCtKFZ",
-            "moduleName": "ExpoModulesCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "Inlinable",
-              "Custom"
-            ],
-            "isFromExtension": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(_:in:)",
+            "name": "toJavaScriptValue",
+            "printedName": "toJavaScriptValue(in:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11049,38 +11054,26 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ArrayBuffer",
-                "printedName": "ExpoModulesCore.ArrayBuffer",
-                "usr": "s:15ExpoModulesCore11ArrayBufferC"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "JavaScriptRuntime",
                 "printedName": "ExpoModulesJSI.JavaScriptRuntime",
-                "paramValueOwnership": "Shared",
                 "usr": "s:14ExpoModulesJSI17JavaScriptRuntimeC"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15ExpoModulesCore11ArrayBufferC6encode_2in0aB3JSI15JavaScriptValueCAC_AF0iJ7RuntimeCtKFZ",
-            "mangledName": "$s15ExpoModulesCore11ArrayBufferC6encode_2in0aB3JSI15JavaScriptValueCAC_AF0iJ7RuntimeCtKFZ",
+            "usr": "s:15ExpoModulesCore17NativeArrayBufferC17toJavaScriptValue2in0aB3JSI0hiJ0CAF0hI7RuntimeC_tF",
+            "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC17toJavaScriptValue2in0aB3JSI0hiJ0CAF0hI7RuntimeC_tF",
             "moduleName": "ExpoModulesCore",
-            "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "Inlinable",
-              "Custom",
-              "RawDocComment"
+              "AccessControl"
             ],
             "isFromExtension": true,
-            "throwing": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "s:15ExpoModulesCore11ArrayBufferC",
-        "mangledName": "$s15ExpoModulesCore11ArrayBufferC",
+        "usr": "s:15ExpoModulesCore17NativeArrayBufferC",
+        "mangledName": "$s15ExpoModulesCore17NativeArrayBufferC",
         "moduleName": "ExpoModulesCore",
         "declAttributes": [
           "Final",
@@ -11098,17 +11091,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "JavaScriptDecodable",
-            "printedName": "JavaScriptDecodable",
-            "usr": "s:14ExpoModulesJSI19JavaScriptDecodableP",
-            "mangledName": "$s14ExpoModulesJSI19JavaScriptDecodableP"
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
-            "name": "JavaScriptEncodable",
-            "printedName": "JavaScriptEncodable",
-            "usr": "s:14ExpoModulesJSI19JavaScriptEncodableP",
-            "mangledName": "$s14ExpoModulesJSI19JavaScriptEncodableP"
+            "name": "JavaScriptRepresentable",
+            "printedName": "JavaScriptRepresentable",
+            "usr": "s:14ExpoModulesJSI23JavaScriptRepresentableP",
+            "mangledName": "$s14ExpoModulesJSI23JavaScriptRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -11133,13 +11126,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -11152,16 +11138,6 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "ExpoModulesJSI",
-        "printedName": "ExpoModulesJSI",
-        "declKind": "Import",
-        "moduleName": "ExpoModulesCore",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -24135,49 +24111,6 @@
           },
           {
             "kind": "Function",
-            "name": "getModule",
-            "printedName": "getModule(implementing:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "τ_0_0?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Metatype",
-                "printedName": "τ_0_0.Type",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore14ModuleRegistryC03getD012implementingxSgxm_tlF",
-            "mangledName": "$s15ExpoModulesCore14ModuleRegistryC03getD012implementingxSgxm_tlF",
-            "moduleName": "ExpoModulesCore",
-            "genericSig": "<τ_0_0>",
-            "sugared_genericSig": "<ModuleProtocol>",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "getModuleNames",
             "printedName": "getModuleNames()",
             "children": [
@@ -24772,106 +24705,6 @@
             "usr": "s:15ExpoModulesCore10BaseModuleC9sendEventyySS_SDySSypSgGtF",
             "mangledName": "$s15ExpoModulesCore10BaseModuleC9sendEventyySS_SDySSypSgGtF",
             "moduleName": "ExpoModulesCore",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didCreate",
-            "printedName": "didCreate()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore10BaseModuleC9didCreateyyF",
-            "mangledName": "$s15ExpoModulesCore10BaseModuleC9didCreateyyF",
-            "moduleName": "ExpoModulesCore",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "willDestroy",
-            "printedName": "willDestroy()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore10BaseModuleC11willDestroyyyF",
-            "mangledName": "$s15ExpoModulesCore10BaseModuleC11willDestroyyyF",
-            "moduleName": "ExpoModulesCore",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didStartListening",
-            "printedName": "didStartListening(event:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore10BaseModuleC17didStartListening5eventySS_tF",
-            "mangledName": "$s15ExpoModulesCore10BaseModuleC17didStartListening5eventySS_tF",
-            "moduleName": "ExpoModulesCore",
-            "isOpen": true,
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didStopListening",
-            "printedName": "didStopListening(event:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore10BaseModuleC16didStopListening5eventySS_tF",
-            "mangledName": "$s15ExpoModulesCore10BaseModuleC16didStopListening5eventySS_tF",
-            "moduleName": "ExpoModulesCore",
-            "isOpen": true,
             "declAttributes": [
               "AccessControl",
               "RawDocComment"
@@ -27339,114 +27172,6 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "didCreate",
-            "printedName": "didCreate()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore9AnyModuleP9didCreateyyF",
-            "mangledName": "$s15ExpoModulesCore9AnyModuleP9didCreateyyF",
-            "moduleName": "ExpoModulesCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesCore.AnyModule>",
-            "sugared_genericSig": "<Self where Self : ExpoModulesCore.AnyModule>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "willDestroy",
-            "printedName": "willDestroy()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore9AnyModuleP11willDestroyyyF",
-            "mangledName": "$s15ExpoModulesCore9AnyModuleP11willDestroyyyF",
-            "moduleName": "ExpoModulesCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesCore.AnyModule>",
-            "sugared_genericSig": "<Self where Self : ExpoModulesCore.AnyModule>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didStartListening",
-            "printedName": "didStartListening(event:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore9AnyModuleP17didStartListening5eventySS_tF",
-            "mangledName": "$s15ExpoModulesCore9AnyModuleP17didStartListening5eventySS_tF",
-            "moduleName": "ExpoModulesCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesCore.AnyModule>",
-            "sugared_genericSig": "<Self where Self : ExpoModulesCore.AnyModule>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didStopListening",
-            "printedName": "didStopListening(event:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore9AnyModuleP16didStopListening5eventySS_tF",
-            "mangledName": "$s15ExpoModulesCore9AnyModuleP16didStopListening5eventySS_tF",
-            "moduleName": "ExpoModulesCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesCore.AnyModule>",
-            "sugared_genericSig": "<Self where Self : ExpoModulesCore.AnyModule>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Var",
             "name": "_jsName",
             "printedName": "_jsName",
@@ -27463,9 +27188,6 @@
             "mangledName": "$s15ExpoModulesCore9AnyModulePAAE7_jsNameSSvpZ",
             "moduleName": "ExpoModulesCore",
             "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
             "isFromExtension": true,
             "accessors": [
               {
@@ -27511,7 +27233,6 @@
             "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesCore.AnyModule>",
             "sugared_genericSig": "<Self where Self : ExpoModulesCore.AnyModule>",
             "declAttributes": [
-              "AccessControl",
               "Custom",
               "RawDocComment"
             ],
@@ -27544,9 +27265,6 @@
             "moduleName": "ExpoModulesCore",
             "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesCore.AnyModule>",
             "sugared_genericSig": "<Self where Self : ExpoModulesCore.AnyModule>",
-            "declAttributes": [
-              "AccessControl"
-            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -27581,116 +27299,10 @@
             "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesCore.AnyModule>",
             "sugared_genericSig": "<Self where Self : ExpoModulesCore.AnyModule>",
             "declAttributes": [
-              "AccessControl",
               "Custom"
             ],
             "isFromExtension": true,
             "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didCreate",
-            "printedName": "didCreate()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore9AnyModulePAAE9didCreateyyF",
-            "mangledName": "$s15ExpoModulesCore9AnyModulePAAE9didCreateyyF",
-            "moduleName": "ExpoModulesCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesCore.AnyModule>",
-            "sugared_genericSig": "<Self where Self : ExpoModulesCore.AnyModule>",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "willDestroy",
-            "printedName": "willDestroy()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore9AnyModulePAAE11willDestroyyyF",
-            "mangledName": "$s15ExpoModulesCore9AnyModulePAAE11willDestroyyyF",
-            "moduleName": "ExpoModulesCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesCore.AnyModule>",
-            "sugared_genericSig": "<Self where Self : ExpoModulesCore.AnyModule>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didStartListening",
-            "printedName": "didStartListening(event:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore9AnyModulePAAE17didStartListening5eventySS_tF",
-            "mangledName": "$s15ExpoModulesCore9AnyModulePAAE17didStartListening5eventySS_tF",
-            "moduleName": "ExpoModulesCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesCore.AnyModule>",
-            "sugared_genericSig": "<Self where Self : ExpoModulesCore.AnyModule>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didStopListening",
-            "printedName": "didStopListening(event:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore9AnyModulePAAE16didStopListening5eventySS_tF",
-            "mangledName": "$s15ExpoModulesCore9AnyModulePAAE16didStopListening5eventySS_tF",
-            "moduleName": "ExpoModulesCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : ExpoModulesCore.AnyModule>",
-            "sugared_genericSig": "<Self where Self : ExpoModulesCore.AnyModule>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -46732,38 +46344,6 @@
           },
           {
             "kind": "Function",
-            "name": "keyWindow",
-            "printedName": "keyWindow()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIWindow?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIWindow",
-                    "printedName": "UIKit.UIWindow",
-                    "usr": "c:objc(cs)UIWindow"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15ExpoModulesCore9UtilitiesV9keyWindowSo8UIWindowCSgyFZ",
-            "mangledName": "$s15ExpoModulesCore9UtilitiesV9keyWindowSo8UIWindowCSgyFZ",
-            "moduleName": "ExpoModulesCore",
-            "static": true,
-            "declAttributes": [
-              "AccessControl",
-              "Custom",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "currentViewController",
             "printedName": "currentViewController()",
             "children": [
@@ -57505,17 +57085,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "AnyArgument",
-            "printedName": "AnyArgument",
-            "usr": "s:15ExpoModulesCore11AnyArgumentP",
-            "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Convertible",
             "printedName": "Convertible",
             "usr": "s:15ExpoModulesCore11ConvertibleP",
             "mangledName": "$s15ExpoModulesCore11ConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyArgument",
+            "printedName": "AnyArgument",
+            "usr": "s:15ExpoModulesCore11AnyArgumentP",
+            "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
           },
           {
             "kind": "Conformance",
@@ -57748,17 +57328,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "AnyArgument",
-            "printedName": "AnyArgument",
-            "usr": "s:15ExpoModulesCore11AnyArgumentP",
-            "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Convertible",
             "printedName": "Convertible",
             "usr": "s:15ExpoModulesCore11ConvertibleP",
             "mangledName": "$s15ExpoModulesCore11ConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyArgument",
+            "printedName": "AnyArgument",
+            "usr": "s:15ExpoModulesCore11AnyArgumentP",
+            "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
           },
           {
             "kind": "Conformance",
@@ -58184,17 +57764,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "AnyArgument",
-            "printedName": "AnyArgument",
-            "usr": "s:15ExpoModulesCore11AnyArgumentP",
-            "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Convertible",
             "printedName": "Convertible",
             "usr": "s:15ExpoModulesCore11ConvertibleP",
             "mangledName": "$s15ExpoModulesCore11ConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyArgument",
+            "printedName": "AnyArgument",
+            "usr": "s:15ExpoModulesCore11AnyArgumentP",
+            "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
           },
           {
             "kind": "Conformance",
@@ -59076,17 +58656,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Convertible",
-            "printedName": "Convertible",
-            "usr": "s:15ExpoModulesCore11ConvertibleP",
-            "mangledName": "$s15ExpoModulesCore11ConvertibleP"
-          },
-          {
-            "kind": "Conformance",
             "name": "AnyArgument",
             "printedName": "AnyArgument",
             "usr": "s:15ExpoModulesCore11AnyArgumentP",
             "mangledName": "$s15ExpoModulesCore11AnyArgumentP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Convertible",
+            "printedName": "Convertible",
+            "usr": "s:15ExpoModulesCore11ConvertibleP",
+            "mangledName": "$s15ExpoModulesCore11ConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -60507,1316 +60087,1302 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/AppDelegates\/ExpoAppDelegateSubscriberManager.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/AppDelegates\/ExpoAppDelegateSubscriberManager.swift",
       "kind": "Dictionary",
       "offset": 14340,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/AppDelegates\/ModulePriorities.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/AppDelegates\/ModulePriorities.swift",
       "kind": "Dictionary",
       "offset": 297,
       "length": 178,
       "value": "[(\"expo-screen-orientation\", 10), (\"expo-updates\", 5)]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
       "kind": "StringLiteral",
       "offset": 673,
       "length": 69,
       "value": "\"Failed to get the JSLoggerModule logger. Falling back to OS logger.\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
       "kind": "BooleanLiteral",
       "offset": 948,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
       "kind": "BooleanLiteral",
       "offset": 1148,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
       "kind": "StringLiteral",
       "offset": 3558,
       "length": 52,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
       "kind": "StringLiteral",
       "offset": 3609,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
       "kind": "StringLiteral",
       "offset": 26260,
       "length": 21,
       "value": "\"ExpoModulesProvider\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
       "kind": "StringLiteral",
       "offset": 28411,
       "length": 24,
       "value": "\"Reload from appContext\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/AppContext.swift",
       "kind": "Dictionary",
       "offset": 29365,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ArrayBuffers\/ArrayBuffer.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ArrayBuffers\/NativeArrayBuffer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1623,
+      "offset": 2236,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ArrayBuffers\/ArrayBuffer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2114,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Classes\/ClassDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Classes\/ClassDefinition.swift",
       "kind": "Array",
       "offset": 703,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Classes\/ClassDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Classes\/ClassDefinition.swift",
       "kind": "Array",
       "offset": 1334,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Classes\/ClassDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Classes\/ClassDefinition.swift",
       "kind": "Array",
       "offset": 1555,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 8208,
       "length": 4,
       "value": "\"-+\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 8258,
       "length": 3,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 8381,
       "length": 3,
       "value": "\"%\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 8477,
       "length": 3,
       "value": "\",\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 8568,
       "length": 5,
       "value": "\"rgb\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 8593,
       "length": 3,
       "value": "\"a\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 8603,
       "length": 3,
       "value": "\"(\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 8895,
       "length": 3,
       "value": "\")\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 8974,
       "length": 5,
       "value": "\"rgb\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 8999,
       "length": 3,
       "value": "\"a\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 9009,
       "length": 3,
       "value": "\"(\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 9253,
       "length": 3,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 9362,
       "length": 3,
       "value": "\")\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 9441,
       "length": 5,
       "value": "\"hsl\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 9466,
       "length": 3,
       "value": "\"a\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 9476,
       "length": 3,
       "value": "\"(\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 9585,
       "length": 3,
       "value": "\"%\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 9638,
       "length": 3,
       "value": "\"%\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 9687,
       "length": 3,
       "value": "\",\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 9796,
       "length": 3,
       "value": "\")\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 9875,
       "length": 5,
       "value": "\"hsl\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 9900,
       "length": 3,
       "value": "\"a\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 9910,
       "length": 3,
       "value": "\"(\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 10027,
       "length": 3,
       "value": "\"%\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 10088,
       "length": 3,
       "value": "\"%\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 10137,
       "length": 3,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 10246,
       "length": 3,
       "value": "\")\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 10320,
       "length": 6,
       "value": "\"hwb(\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 10440,
       "length": 3,
       "value": "\"%\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 10501,
       "length": 3,
       "value": "\"%\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 10550,
       "length": 3,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "StringLiteral",
       "offset": 10659,
       "length": 3,
       "value": "\")\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "IntegerLiteral",
       "offset": 11386,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "IntegerLiteral",
       "offset": 11395,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "IntegerLiteral",
       "offset": 11408,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "IntegerLiteral",
       "offset": 11417,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "FloatLiteral",
       "offset": 11430,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "FloatLiteral",
       "offset": 11436,
       "length": 3,
       "value": "6.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "FloatLiteral",
       "offset": 11463,
       "length": 3,
       "value": "6.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "FloatLiteral",
       "offset": 11482,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "FloatLiteral",
       "offset": 11488,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "FloatLiteral",
       "offset": 11514,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "FloatLiteral",
       "offset": 11520,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "FloatLiteral",
       "offset": 11548,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "FloatLiteral",
       "offset": 11554,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "FloatLiteral",
       "offset": 11565,
       "length": 3,
       "value": "6.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "Dictionary",
       "offset": 14442,
       "length": 5352,
       "value": "[(\"aliceblue\", [240, 248, 255, 255]), (\"antiquewhite\", [250, 235, 215, 255]), (\"aqua\", [0, 255, 255, 255]), (\"aquamarine\", [127, 255, 212, 255]), (\"azure\", [240, 255, 255, 255]), (\"beige\", [245, 245, 220, 255]), (\"bisque\", [255, 228, 196, 255]), (\"black\", [0, 0, 0, 255]), (\"blanchedalmond\", [255, 235, 205, 255]), (\"blue\", [0, 0, 255, 255]), (\"blueviolet\", [138, 43, 226, 255]), (\"brown\", [165, 42, 42, 255]), (\"burlywood\", [222, 184, 135, 255]), (\"cadetblue\", [95, 158, 160, 255]), (\"chartreuse\", [127, 255, 0, 255]), (\"chocolate\", [210, 105, 30, 255]), (\"coral\", [255, 127, 80, 255]), (\"cornflowerblue\", [100, 149, 237, 255]), (\"cornsilk\", [255, 248, 220, 255]), (\"crimson\", [220, 20, 60, 255]), (\"cyan\", [0, 255, 255, 255]), (\"darkblue\", [0, 0, 139, 255]), (\"darkcyan\", [0, 139, 139, 255]), (\"darkgoldenrod\", [184, 134, 11, 255]), (\"darkgray\", [169, 169, 169, 255]), (\"darkgreen\", [0, 100, 0, 255]), (\"darkgrey\", [169, 169, 169, 255]), (\"darkkhaki\", [189, 183, 107, 255]), (\"darkmagenta\", [139, 0, 139, 255]), (\"darkolivegreen\", [85, 107, 47, 255]), (\"darkorange\", [255, 140, 0, 255]), (\"darkorchid\", [153, 50, 204, 255]), (\"darkred\", [139, 0, 0, 255]), (\"darksalmon\", [233, 150, 122, 255]), (\"darkseagreen\", [143, 188, 143, 255]), (\"darkslateblue\", [72, 61, 139, 255]), (\"darkslategray\", [47, 79, 79, 255]), (\"darkslategrey\", [47, 79, 79, 255]), (\"darkturquoise\", [0, 206, 209, 255]), (\"darkviolet\", [148, 0, 211, 255]), (\"deeppink\", [255, 20, 147, 255]), (\"deepskyblue\", [0, 191, 255, 255]), (\"dimgray\", [105, 105, 105, 255]), (\"dimgrey\", [105, 105, 105, 255]), (\"dodgerblue\", [30, 144, 255, 255]), (\"firebrick\", [178, 34, 34, 255]), (\"floralwhite\", [255, 250, 240, 255]), (\"forestgreen\", [34, 139, 34, 255]), (\"fuchsia\", [255, 0, 255, 255]), (\"gainsboro\", [220, 220, 220, 255]), (\"ghostwhite\", [248, 248, 255, 255]), (\"gold\", [255, 215, 0, 255]), (\"goldenrod\", [218, 165, 32, 255]), (\"gray\", [128, 128, 128, 255]), (\"green\", [0, 128, 0, 255]), (\"greenyellow\", [173, 255, 47, 255]), (\"grey\", [128, 128, 128, 255]), (\"honeydew\", [240, 255, 240, 255]), (\"hotpink\", [255, 105, 180, 255]), (\"indianred\", [205, 92, 92, 255]), (\"indigo\", [75, 0, 130, 255]), (\"ivory\", [255, 255, 240, 255]), (\"khaki\", [240, 230, 140, 255]), (\"lavender\", [230, 230, 250, 255]), (\"lavenderblush\", [255, 240, 245, 255]), (\"lawngreen\", [124, 252, 0, 255]), (\"lemonchiffon\", [255, 250, 205, 255]), (\"lightblue\", [173, 216, 230, 255]), (\"lightcoral\", [240, 128, 128, 255]), (\"lightcyan\", [224, 255, 255, 255]), (\"lightgoldenrodyellow\", [250, 250, 210, 255]), (\"lightgray\", [211, 211, 211, 255]), (\"lightgreen\", [144, 238, 144, 255]), (\"lightgrey\", [211, 211, 211, 255]), (\"lightpink\", [255, 182, 193, 255]), (\"lightsalmon\", [255, 160, 122, 255]), (\"lightseagreen\", [32, 178, 170, 255]), (\"lightskyblue\", [135, 206, 250, 255]), (\"lightslategray\", [119, 136, 153, 255]), (\"lightslategrey\", [119, 136, 153, 255]), (\"lightsteelblue\", [176, 196, 222, 255]), (\"lightyellow\", [255, 255, 224, 255]), (\"lime\", [0, 255, 0, 255]), (\"limegreen\", [50, 205, 50, 255]), (\"linen\", [250, 240, 230, 255]), (\"magenta\", [255, 0, 255, 255]), (\"maroon\", [128, 0, 0, 255]), (\"mediumaquamarine\", [102, 205, 170, 255]), (\"mediumblue\", [0, 0, 205, 255]), (\"mediumorchid\", [186, 85, 211, 255]), (\"mediumpurple\", [147, 112, 219, 255]), (\"mediumseagreen\", [60, 179, 113, 255]), (\"mediumslateblue\", [123, 104, 238, 255]), (\"mediumspringgreen\", [0, 250, 154, 255]), (\"mediumturquoise\", [72, 209, 204, 255]), (\"mediumvioletred\", [199, 21, 133, 255]), (\"midnightblue\", [25, 25, 112, 255]), (\"mintcream\", [245, 255, 250, 255]), (\"mistyrose\", [255, 228, 225, 255]), (\"moccasin\", [255, 228, 181, 255]), (\"navajowhite\", [255, 222, 173, 255]), (\"navy\", [0, 0, 128, 255]), (\"oldlace\", [253, 245, 230, 255]), (\"olive\", [128, 128, 0, 255]), (\"olivedrab\", [107, 142, 35, 255]), (\"orange\", [255, 165, 0, 255]), (\"orangered\", [255, 69, 0, 255]), (\"orchid\", [218, 112, 214, 255]), (\"palegoldenrod\", [238, 232, 170, 255]), (\"palegreen\", [152, 251, 152, 255]), (\"paleturquoise\", [175, 238, 238, 255]), (\"palevioletred\", [219, 112, 147, 255]), (\"papayawhip\", [255, 239, 213, 255]), (\"peachpuff\", [255, 218, 185, 255]), (\"peru\", [205, 133, 63, 255]), (\"pink\", [255, 192, 203, 255]), (\"plum\", [221, 160, 221, 255]), (\"powderblue\", [176, 224, 230, 255]), (\"purple\", [128, 0, 128, 255]), (\"rebeccapurple\", [102, 51, 153, 255]), (\"red\", [255, 0, 0, 255]), (\"rosybrown\", [188, 143, 143, 255]), (\"royalblue\", [65, 105, 225, 255]), (\"saddlebrown\", [139, 69, 19, 255]), (\"salmon\", [250, 128, 114, 255]), (\"sandybrown\", [244, 164, 96, 255]), (\"seagreen\", [46, 139, 87, 255]), (\"seashell\", [255, 245, 238, 255]), (\"sienna\", [160, 82, 45, 255]), (\"silver\", [192, 192, 192, 255]), (\"skyblue\", [135, 206, 235, 255]), (\"slateblue\", [106, 90, 205, 255]), (\"slategray\", [112, 128, 144, 255]), (\"slategrey\", [112, 128, 144, 255]), (\"snow\", [255, 250, 250, 255]), (\"springgreen\", [0, 255, 127, 255]), (\"steelblue\", [70, 130, 180, 255]), (\"tan\", [210, 180, 140, 255]), (\"teal\", [0, 128, 128, 255]), (\"thistle\", [216, 191, 216, 255]), (\"tomato\", [255, 99, 71, 255]), (\"transparent\", [0, 0, 0, 0]), (\"turquoise\", [64, 224, 208, 255]), (\"violet\", [238, 130, 238, 255]), (\"wheat\", [245, 222, 179, 255]), (\"white\", [255, 255, 255, 255]), (\"whitesmoke\", [245, 245, 245, 255]), (\"yellow\", [255, 255, 0, 255]), (\"yellowgreen\", [154, 205, 50, 255])]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Convertibles\/Convertibles+Color.swift",
       "kind": "FloatLiteral",
       "offset": 19821,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Exceptions\/Exception.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Exceptions\/Exception.swift",
       "kind": "BooleanLiteral",
       "offset": 1600,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Exceptions\/Exception.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Exceptions\/Exception.swift",
       "kind": "BooleanLiteral",
       "offset": 2026,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ExpoModulesMacros.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ExpoModulesMacros.swift",
       "kind": "BooleanLiteral",
       "offset": 2791,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ExpoModulesMacros.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ExpoModulesMacros.swift",
       "kind": "Array",
       "offset": 4020,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/AsyncFunctionDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/AsyncFunctionDefinition.swift",
       "kind": "StringLiteral",
       "offset": 486,
       "length": 33,
       "value": "\"expo.modules.AsyncFunctionQueue\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/AsyncFunctionDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/AsyncFunctionDefinition.swift",
       "kind": "BooleanLiteral",
       "offset": 2456,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/AsyncFunctionDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/AsyncFunctionDefinition.swift",
       "kind": "IntegerLiteral",
       "offset": 5099,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/ConcurrentFunctionDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/ConcurrentFunctionDefinition.swift",
       "kind": "BooleanLiteral",
       "offset": 1632,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/ConcurrentFunctionDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/ConcurrentFunctionDefinition.swift",
       "kind": "BooleanLiteral",
       "offset": 1670,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/OptimizedAsyncFunctionDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/OptimizedAsyncFunctionDefinition.swift",
       "kind": "BooleanLiteral",
       "offset": 1171,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/OptimizedSyncFunctionDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/OptimizedSyncFunctionDefinition.swift",
       "kind": "BooleanLiteral",
       "offset": 1053,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/StaticFunctionDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/StaticFunctionDefinition.swift",
       "kind": "BooleanLiteral",
       "offset": 565,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/StaticFunctionDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/StaticFunctionDefinition.swift",
       "kind": "BooleanLiteral",
       "offset": 910,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/StaticFunctionDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/StaticFunctionDefinition.swift",
       "kind": "BooleanLiteral",
       "offset": 1265,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/SyncFunctionDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Functions\/SyncFunctionDefinition.swift",
       "kind": "BooleanLiteral",
       "offset": 2548,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/JSValueDecoder.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/JSValueDecoder.swift",
       "kind": "Dictionary",
       "offset": 1901,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/JSValueDecoder.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/JSValueDecoder.swift",
       "kind": "IntegerLiteral",
       "offset": 10858,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/JSValueEncoder.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/JSValueEncoder.swift",
       "kind": "Dictionary",
       "offset": 2004,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/JSValueEncoder.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/JSValueEncoder.swift",
       "kind": "IntegerLiteral",
       "offset": 10106,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
       "kind": "IntegerLiteral",
       "offset": 164,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
       "kind": "IntegerLiteral",
       "offset": 181,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
       "kind": "IntegerLiteral",
       "offset": 203,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
       "kind": "IntegerLiteral",
       "offset": 220,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
       "kind": "IntegerLiteral",
       "offset": 236,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
       "kind": "IntegerLiteral",
       "offset": 252,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
       "kind": "IntegerLiteral",
       "offset": 269,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/LogType.swift",
       "kind": "IntegerLiteral",
       "offset": 286,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/Logger.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 446,
       "length": 18,
       "value": "\"dev.expo.modules\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/Logger.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/Logger.swift",
       "kind": "StringLiteral",
       "offset": 505,
       "length": 6,
       "value": "\"expo\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/PersistentFileLog.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Logging\/PersistentFileLog.swift",
       "kind": "StringLiteral",
       "offset": 1183,
       "length": 31,
       "value": "\"dev.expo.modules.core.logging\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ModuleHolder.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ModuleHolder.swift",
       "kind": "IntegerLiteral",
-      "offset": 1135,
+      "offset": 1140,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ModuleRegistry.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ModuleRegistry.swift",
       "kind": "Dictionary",
       "offset": 188,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ModuleRegistry.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ModuleRegistry.swift",
       "kind": "BooleanLiteral",
       "offset": 453,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ModuleRegistry.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ModuleRegistry.swift",
       "kind": "BooleanLiteral",
-      "offset": 1517,
+      "offset": 1180,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ModuleRegistry.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/ModuleRegistry.swift",
       "kind": "BooleanLiteral",
-      "offset": 1968,
+      "offset": 1618,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 293,
       "length": 24,
       "value": "\"expoModulesCoreVersion\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 419,
       "length": 3,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "IntegerLiteral",
       "offset": 424,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 444,
       "length": 3,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 496,
       "length": 9,
       "value": "\"version\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 524,
       "length": 7,
       "value": "\"major\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "IntegerLiteral",
       "offset": 544,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 556,
       "length": 7,
       "value": "\"minor\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "IntegerLiteral",
       "offset": 576,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 588,
       "length": 7,
       "value": "\"patch\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "IntegerLiteral",
       "offset": 608,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 639,
       "length": 10,
       "value": "\"cacheDir\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 743,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 766,
       "length": 14,
       "value": "\"documentsDir\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 876,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 899,
       "length": 20,
       "value": "\"installOnUIRuntime\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 2152,
       "length": 8,
       "value": "\"uuidv4\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 2244,
       "length": 8,
       "value": "\"uuidv5\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 2587,
       "length": 15,
       "value": "\"getViewConfig\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "Dictionary",
       "offset": 2710,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "Dictionary",
       "offset": 2758,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "BooleanLiteral",
       "offset": 3097,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 3349,
       "length": 18,
       "value": "\"registrationName\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 3421,
       "length": 17,
       "value": "\"validAttributes\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 3465,
       "length": 18,
       "value": "\"directEventTypes\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/CoreModule.swift",
       "kind": "StringLiteral",
       "offset": 3535,
       "length": 16,
       "value": "\"reloadAppAsync\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
       "kind": "StringLiteral",
       "offset": 25,
       "length": 35,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
       "kind": "StringLiteral",
       "offset": 48,
       "length": 1,
       "value": "\".onNewError\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
       "kind": "StringLiteral",
       "offset": 88,
       "length": 37,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
       "kind": "StringLiteral",
       "offset": 111,
       "length": 1,
       "value": "\".onNewWarning\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
       "kind": "StringLiteral",
       "offset": 151,
       "length": 35,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
       "kind": "StringLiteral",
       "offset": 174,
       "length": 1,
       "value": "\".onNewDebug\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
       "kind": "StringLiteral",
       "offset": 211,
       "length": 34,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
       "kind": "StringLiteral",
       "offset": 234,
       "length": 1,
       "value": "\".onNewInfo\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
       "kind": "StringLiteral",
       "offset": 271,
       "length": 35,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
       "kind": "StringLiteral",
       "offset": 294,
       "length": 1,
       "value": "\".onNewTrace\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/JSLoggerModule.swift",
       "kind": "StringLiteral",
       "offset": 379,
       "length": 25,
       "value": "\"ExpoModulesCoreJSLogger\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/Module.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/Module.swift",
       "kind": "Dictionary",
-      "offset": 884,
+      "offset": 866,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/ModuleDefinition.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Modules\/ModuleDefinition.swift",
       "kind": "StringLiteral",
       "offset": 49,
       "length": 21,
       "value": "\"DEFAULT_MODULE_VIEW\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
       "kind": "IntegerLiteral",
       "offset": 266,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
       "kind": "FloatLiteral",
       "offset": 532,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
       "kind": "FloatLiteral",
       "offset": 630,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
       "kind": "BooleanLiteral",
       "offset": 894,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
       "kind": "BooleanLiteral",
       "offset": 994,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
       "kind": "StringLiteral",
       "offset": 1264,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
       "kind": "StringLiteral",
       "offset": 1361,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
       "kind": "Array",
       "offset": 1642,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
       "kind": "Array",
       "offset": 1739,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
       "kind": "Dictionary",
       "offset": 2030,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldExtensions.swift",
       "kind": "Dictionary",
       "offset": 2128,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldOption.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/FieldOption.swift",
       "kind": "IntegerLiteral",
       "offset": 1691,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/Formatter.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Records\/Formatter.swift",
       "kind": "Array",
       "offset": 2596,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/SharedObjects\/SharedObject.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/SharedObjects\/SharedObject.swift",
       "kind": "IntegerLiteral",
       "offset": 616,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/SharedObjects\/SharedObjectNativeState.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/SharedObjects\/SharedObjectNativeState.swift",
       "kind": "Dictionary",
       "offset": 1215,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/SharedObjects\/SharedObjectRegistry.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/SharedObjects\/SharedObjectRegistry.swift",
       "kind": "StringLiteral",
       "offset": 281,
       "length": 27,
       "value": "\"__expo_shared_object_id__\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/SharedObjects\/SharedObjectRegistry.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/SharedObjects\/SharedObjectRegistry.swift",
       "kind": "IntegerLiteral",
       "offset": 1423,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/SwiftUI\/AutoSizingStack.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/SwiftUI\/AutoSizingStack.swift",
       "kind": "IntegerLiteral",
       "offset": 304,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/SwiftUI\/AutoSizingStack.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/SwiftUI\/AutoSizingStack.swift",
       "kind": "IntegerLiteral",
       "offset": 309,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/SwiftUI\/AutoSizingStack.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/SwiftUI\/AutoSizingStack.swift",
       "kind": "IntegerLiteral",
       "offset": 363,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/SwiftUI\/AutoSizingStack.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/SwiftUI\/AutoSizingStack.swift",
       "kind": "IntegerLiteral",
       "offset": 368,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/SwiftUI\/SwiftUIViewHost.swift",
-      "kind": "Array",
-      "offset": 1390,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/SwiftUI\/SwiftUIViewProps.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/SwiftUI\/SwiftUIViewProps.swift",
       "kind": "StringLiteral",
       "offset": 113,
       "length": 15,
       "value": "\"onGlobalEvent\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/ViewModuleWrapper.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/ViewModuleWrapper.swift",
       "kind": "BooleanLiteral",
       "offset": 1336,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/ViewModuleWrapper.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/ViewModuleWrapper.swift",
       "kind": "BooleanLiteral",
       "offset": 1576,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/ViewModuleWrapper.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/ViewModuleWrapper.swift",
       "kind": "StringLiteral",
       "offset": 4303,
       "length": 21,
       "value": "\"ViewManagerAdapter_\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/ViewModuleWrapper.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Core\/Views\/ViewModuleWrapper.swift",
       "kind": "Array",
       "offset": 5970,
       "length": 23,
       "value": "[\"RCTDirectEventBlock\"]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
       "kind": "StringLiteral",
-      "offset": 759,
+      "offset": 334,
       "length": 7,
       "value": "\"Image\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
       "kind": "StringLiteral",
-      "offset": 784,
+      "offset": 359,
       "length": 7,
       "value": "\"Media\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
       "kind": "StringLiteral",
-      "offset": 808,
+      "offset": 383,
       "length": 6,
       "value": "\"Font\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
       "kind": "StringLiteral",
-      "offset": 833,
+      "offset": 408,
       "length": 8,
       "value": "\"Script\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
       "kind": "StringLiteral",
-      "offset": 859,
+      "offset": 434,
       "length": 7,
       "value": "\"Fetch\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
       "kind": "StringLiteral",
-      "offset": 884,
+      "offset": 459,
       "length": 7,
       "value": "\"Other\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2766,
+      "offset": 2257,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
       "kind": "StringLiteral",
-      "offset": 2791,
+      "offset": 2282,
       "length": 8,
       "value": "\"mobile\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
       "kind": "Dictionary",
-      "offset": 2911,
+      "offset": 2402,
       "length": 18,
       "value": "[(\"type\", \"script\")]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
       "kind": "StringLiteral",
-      "offset": 3076,
+      "offset": 2567,
       "length": 13,
       "value": "\"no-referrer\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
       "kind": "StringLiteral",
-      "offset": 4147,
+      "offset": 3638,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/CdpNetworkTypes.swift",
       "kind": "BooleanLiteral",
-      "offset": 4260,
+      "offset": 3751,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/ExpoRequestCdpInterceptor.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/ExpoRequestCdpInterceptor.swift",
       "kind": "StringLiteral",
       "offset": 520,
       "length": 28,
       "value": "\"expo.requestCdpInterceptor\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/ExpoRequestInterceptorProtocol.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/ExpoRequestInterceptorProtocol.swift",
       "kind": "BooleanLiteral",
       "offset": 847,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/ExpoRequestInterceptorProtocol.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/ExpoRequestInterceptorProtocol.swift",
       "kind": "IntegerLiteral",
       "offset": 883,
       "length": 9,
       "value": "1048576"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/ExpoRequestInterceptorProtocol.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/ExpoRequestInterceptorProtocol.swift",
       "kind": "IntegerLiteral",
-      "offset": 8641,
+      "offset": 8720,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/ExpoRequestInterceptorProtocol.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/ExpoRequestInterceptorProtocol.swift",
       "kind": "StringLiteral",
-      "offset": 8923,
+      "offset": 9002,
       "length": 42,
       "value": "\"ExpoRequestInterceptorProtocol.requestId\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/URLSessionSessionDelegateProxy.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/DevTools\/URLSessionSessionDelegateProxy.swift",
       "kind": "Dictionary",
       "offset": 371,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Fabric\/ExpoFabricView.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Fabric\/ExpoFabricView.swift",
       "kind": "Dictionary",
       "offset": 1125,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/FileSystemUtilities\/FileSystemManager.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/FileSystemUtilities\/FileSystemManager.swift",
       "kind": "BooleanLiteral",
       "offset": 673,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/FileSystemUtilities\/FileSystemUtilities.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/FileSystemUtilities\/FileSystemUtilities.swift",
       "kind": "Array",
       "offset": 118,
       "length": 41,
       "value": "[\"assets-library\", \"http\", \"https\", \"ph\"]"
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/JS\/ExpoRuntimeInstaller.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/JS\/ExpoRuntimeInstaller.swift",
       "kind": "StringLiteral",
       "offset": 232,
       "length": 6,
       "value": "\"expo\""
     },
     {
-      "filePath": "\/Users\/runner\/work\/expo\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Utilities\/Utilities.swift",
+      "filePath": "\/Users\/alanhughes\/Work\/expo\/packages\/precompile\/.build\/expo-modules-core\/generated\/ExpoModulesCore\/ExpoModulesCore\/Utilities\/Utilities.swift",
       "kind": "StringLiteral",
       "offset": 1194,
       "length": 24,
